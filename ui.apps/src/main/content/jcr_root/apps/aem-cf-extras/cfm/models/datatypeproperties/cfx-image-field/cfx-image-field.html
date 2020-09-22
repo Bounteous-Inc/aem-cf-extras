@@ -1,0 +1,7 @@
+<div data-sly-use.model="com.bounteous.core.models.datatypeproperties.CfxImageField"
+     class="htl-imagefield" style="display: flex" >
+
+    <!--/* TODO: This JSP is in a tree marked granite:InternalArea so needs to be made it's own code. */-->
+    <div data-sly-include="/libs/dam/cfm/models/editor/components/contentreference/contentreference.jsp" style="flex: 1;"></div>
+    <img src="${model.thumbnail}" width="140" height="100" style="object-fit: contain; margin: 5px; border:1px solid lightgray;" class="html-imagefield-preview-${model.name}">
+</div>

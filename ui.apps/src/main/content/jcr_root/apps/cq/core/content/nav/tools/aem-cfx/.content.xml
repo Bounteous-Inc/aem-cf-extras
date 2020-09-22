@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:rep="internal"
+          jcr:primaryType="sling:OrderedFolder"
+          id="aem-cfx"
+          jcr:title="AEM CF Extras">
+    <graphql-playground jcr:primaryType="nt:unstructured"
+                        id="aem-cfx__graphql-playground"
+                        href="/aem-cfx/graphqlplayground"
+                        icon="railRight"
+                        jcr:description="Build and Execute GraphQL Queries."
+                        jcr:title="GraphQL Playground"/>
+</jcr:root>

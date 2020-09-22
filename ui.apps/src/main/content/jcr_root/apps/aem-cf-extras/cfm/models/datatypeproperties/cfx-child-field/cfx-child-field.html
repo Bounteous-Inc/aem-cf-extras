@@ -1,0 +1,11 @@
+<div data-sly-use.model="com.bounteous.core.models.datatypeproperties.CfxChildField" class="htl-childfield">
+    <div class="coral-Form-fieldwrapper" data-type="text" data-element="${model.name}" name="${model.name}">
+        <label class="coral-Form-fieldlabel" handle="labelWrapper" for="coral-id-${model.name}">
+            ${model.label}
+        </label>
+        <textarea class="coral-Form-field coral-Textfield htl-childfield-Textarea" handle="input" id="coral-id-${model.name}"
+                data-value="${model.stringValue}" name="${model.name}" readonly="true" style="height:100px;">${model.stringValue}
+        </textarea>
+    </div>
+    <input class="foundation-field-related" type="hidden" name="${model.name}@Delete">
+</div>

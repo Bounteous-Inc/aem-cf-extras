@@ -1,0 +1,12 @@
+<div class="coral-Form-fieldwrapper" data-sly-use.model="com.bounteous.core.models.editor.components.datatypeproperties.CfxParentModelOptionList">
+    <label class="coral-Form-fieldlabel">Referenced Model Type</label>
+    <coral-select name="${model.nameBase}/cfModel" value="${model.cfModel}" data-sly-list.modelList="${model.getParentModelOptions}" required>
+        <coral-select-item
+                value="${modelList.cfModel}"
+                data-sly-attribute.selected="${modelList.cfModel == model.cfModel}">
+            ${modelList.name}
+        </coral-select-item>
+    </coral-select>
+    <input type="hidden" name="${model.nameBase}/emptyOption" value="true">
+    <input type="hidden" name="${model.nameBase}/emptyOption@TypeHint" value="Boolean">
+</div>

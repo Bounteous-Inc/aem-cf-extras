@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured">
+    <items jcr:primaryType="nt:unstructured">
+        <cfx-text-multi
+                jcr:primaryType="nt:unstructured"
+                fieldIcon="text"
+                fieldProperties="[mvfields,multieditorfield,maptopropertyfield,requiredfield]"
+                fieldPropResourceType="dam/cfm/models/editor/components/datatypes/field"
+                fieldResourceType="[dam/cfm/admin/components/authoring/contenteditor/multieditor,granite/ui/components/coral/foundation/form/multifield]"
+                fieldTitle="CFX Multi line text"
+                listOrder="50"
+                renderType="text"
+                valueType="[string, string[]]"/>
+        <cfx-id-field
+                jcr:primaryType="nt:unstructured"
+                fieldIcon="123"
+                fieldProperties="[labelfield,maptopropertyfield]"
+                fieldPropResourceType="dam/cfm/models/editor/components/datatypes/field"
+                fieldResourceType="aem-cf-extras/cfm/models/datatypeproperties/cfx-id-field"
+                fieldTitle="CFX ID"
+                listOrder="51"
+                renderType=""
+                valueType="string"/>
+        <cfx-parent-field
+                jcr:primaryType="nt:unstructured"
+                fieldIcon="layersBringToFront"
+                fieldProperties="[labelfield,maptopropertyfield,aem-cf-extras/cfm/models/editor/components/datatypeproperties/cfxparentmodeloptionlist,aem-cf-extras/cfm/models/editor/components/datatypeproperties/cfxparentmodelpropertyname]"
+                fieldPropResourceType="dam/cfm/models/editor/components/datatypes/field"
+                fieldResourceType="aem-cf-extras/cfm/models/datatypeproperties/cfx-parent-field"
+                fieldTitle="CFX Parent Attribute"
+                listOrder="52"
+                renderType="text"
+                valueType="string"/>
+        <cfx-child-field
+                jcr:primaryType="nt:unstructured"
+                fieldIcon="layersSendToBack"
+                fieldProperties="[labelfield,maptopropertyfield,aem-cf-extras/cfm/models/editor/components/datatypeproperties/cfxparentmodeloptionlist,aem-cf-extras/cfm/models/editor/components/datatypeproperties/cfxchildfieldsearchroot]"
+                fieldPropResourceType="dam/cfm/models/editor/components/datatypes/field"
+                fieldResourceType="aem-cf-extras/cfm/models/datatypeproperties/cfx-child-field"
+                fieldTitle="CFX Child Reference"
+                listOrder="53"
+                renderType="text"
+                valueType="string"/>
+        <cfx-cf-reference-field
+                jcr:primaryType="nt:unstructured"
+                fieldIcon="folderSearch"
+                fieldProperties="[mvfields,labelfield,maptopropertyfield,requiredfield,pathvaluefield,aem-cf-extras/cfm/models/editor/components/datatypeproperties/cfxparentmodeloptionlist,rootpathfield]"
+                fieldPropResourceType="dam/cfm/models/editor/components/datatypes/field"
+                fieldResourceType="[aem-cf-extras/cfm/models/datatypeproperties/cfx-cf-reference-field,granite/ui/components/coral/foundation/form/multifield]"
+                fieldTitle="CFX CF Reference"
+                listOrder="54"
+                renderType="text"
+                valueType="[string, string[]]"/>
+        <cfx-image-field
+                jcr:primaryType="nt:unstructured"
+                fieldIcon="image"
+                fieldProperties="[labelfield,requiredfield,maptopropertyfield]"
+                fieldPropResourceType="dam/cfm/models/editor/components/datatypes/field"
+                fieldResourceType="aem-cf-extras/cfm/models/datatypeproperties/cfx-image-field"
+                fieldTitle="CFX Image"
+                listOrder="55"
+                renderType="text"
+                valueType="string"/>
+        <cfx-tab-placeholder
+                jcr:primaryType="nt:unstructured"
+                fieldIcon="railTop"
+                fieldProperties="[labelfield,maptopropertyfield]"
+                fieldPropResourceType="dam/cfm/models/editor/components/datatypes/field"
+                fieldResourceType="aem-cf-extras/cfm/models/datatypeproperties/cfx-tab-placeholder"
+                fieldTitle="CFX Tab Placeholder"
+                listOrder="56"
+                renderType=""
+                valueType="string"/>
+        <cfx-datetime
+                jcr:primaryType="nt:unstructured"
+                fieldIcon="calendar"
+                fieldProperties="[labelfield,textfield,maptopropertyfield,datevaluefield,aem-cf-extras/cfm/models/editor/components/datatypeproperties/cfxdatedataformatpicker,requiredfield]"
+                fieldPropResourceType="dam/cfm/models/editor/components/datatypes/field"
+                fieldResourceType="aem-cf-extras/cfm/models/datatypeproperties/cfx-datetime"
+                fieldTitle="CFX Datetime"
+                listOrder="57"
+                renderType="datepicker"
+                valueType="string"/>
+        <cfx-tagfield
+                jcr:primaryType="nt:unstructured"
+                fieldIcon="tag"
+                fieldProperties="[labelfield,maptopropertyfield,requiredfield,tagsroot,aem-cf-extras/cfm/models/editor/components/datatypeproperties/cfxmultiplecheckboxfield,mvfields]"
+                fieldPropResourceType="dam/cfm/models/editor/components/datatypes/field"
+                fieldResourceType="aem-cf-extras/cfm/models/datatypeproperties/cfx-tagfield"
+                fieldTitle="CFX Tags"
+                listOrder="58"
+                renderType="text"
+                valueType="string[]"/>
+    </items>
+</jcr:root>

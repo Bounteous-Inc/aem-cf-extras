@@ -1,0 +1,39 @@
+<sly data-sly-use.model="com.bounteous.core.models.datatypeproperties.CfxTagField">
+    <div class="cfx-tagfield">
+        <label class="coral-Form-fieldlabel" handle="labelWrapper" for="coral-id-${model.name}">
+            ${model.label}
+        </label>
+        <foundation-autocomplete class="coral-Form-field cq-ui-tagfield" valuedisplaymode="${model.multiple ? 'block' : 'inline'}" multiple="${model.multiple}" data-cfminput="true" data-type="string" data-element="${model.name}" data-type-multi="${model.multiple}" name="${model.name}" pickersrc="/mnt/overlay/cq/gui/content/coral/common/form/tagfield/picker.html?root=${model.rootPath}&selectionCount=${model.selectionCount}" data-foundation-validation="" role="combobox">
+            <div class="foundation-autocomplete-inputgroupwrapper">
+                <div class="coral-InputGroup">
+                    <input is="coral-textfield" class="coral3-Textfield coral-InputGroup-input" autocomplete="off" placeholder="" id="coral-id-${model.name}" aria-invalid="false"/>
+                    <span class="coral-InputGroup-button">
+                        <button is="coral-button" class="coral3-Button coral3-Button--secondary" size="M" variant="secondary" title="Open Selection Dialog" type="button" aria-label="Open Selection Dialog">
+                            <coral-icon class="coral3-Icon coral3-Icon--sizeS coral3-Icon--select" icon="select" size="S" role="img" aria-label="select">
+                            </coral-icon>
+                            <coral-button-label>
+                            </coral-button-label>
+                        </button>
+                    </span>
+                </div>
+            </div>
+            <coral-overlay foundation-autocomplete-suggestion="" class="foundation-picker-buttonlist coral3-Overlay" data-foundation-picker-buttonlist-src="/mnt/overlay/cq/gui/content/coral/common/form/tagfield/suggestion{.offset,limit}.html?root=${model.rootPath}{&query}" aria-hidden="true" style="display: none;"></coral-overlay>
+            <coral-taglist foundation-autocomplete-value="" name="${model.name}" style="position: relative;" class="coral3-TagList" aria-disabled="false" role="listbox" aria-live="off" aria-atomic="false" aria-relevant="additions" aria-readonly="false" aria-invalid="false" aria-required="false">
+                <sly data-sly-list.tags="${model.value}">
+                    <coral-tag multiline="" value="${tags}" tabindex="0" class="coral3-Tag coral3-Tag--multiline coral3-Tag--large" role="option" aria-selected="false">
+                        <button is="coral-button" class="coral3-Button coral3-Button--minimal coral3-Tag-removeButton" size="M" variant="minimal" handle="button" type="button" icon="close" iconsize="XS" title="Remove" tabindex="-1" coral-close="">
+                            <coral-icon class="coral3-Icon coral3-Icon--close coral3-Icon--sizeXS" icon="close" size="XS" role="img" aria-label="close">
+                            </coral-icon>
+                            <coral-button-label>
+                            </coral-button-label>
+                        </button>
+                        <coral-tag-label>${tags}</coral-tag-label>
+                        <input handle="input" type="hidden" name="${model.name}" value="${tags}">
+                    </coral-tag>
+                </sly>
+                <object aria-hidden="true" tabindex="-1" style="display:block; position:absolute; top:0; left:0; height:100%; width:100%; opacity:0; overflow:hidden; z-index:-100;" type="text/html" data="about:blank">​</object>
+            </coral-taglist>
+            <input class="foundation-field-related" type="hidden" name="${model.name}@Delete">
+        </foundation-autocomplete>
+    </div>
+</sly>

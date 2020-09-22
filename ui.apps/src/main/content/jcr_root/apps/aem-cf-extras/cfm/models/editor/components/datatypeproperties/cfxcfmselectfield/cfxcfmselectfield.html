@@ -1,0 +1,14 @@
+<div class="coral-Form-fieldwrapper" data-sly-use.model="com.bounteous.core.models.editor.components.datatypeproperties.CfxCfmSelectField">
+    <label class="coral-Form-fieldlabel">Scaffold Type</label>
+    <coral-select name="${model.nameBase}/scaffoldValue" data-sly-list.scaffoldItem="${model.scaffoldSelectMap}" required>
+        <coral-select-item
+                value="${scaffoldItem}"
+                data-sly-attribute.selected="${scaffoldItem == model.scaffoldValue}">
+            ${model.scaffoldSelectMap[scaffoldItem]}
+        </coral-select-item>
+    </coral-select>
+    <input type="hidden" name="${model.nameBase}/datasource/sling:resourceType" value="aem-cf-extras/datasource/cfxcfselect">
+    <input type="hidden" name="${model.nameBase}/datasource/variant" value="default">
+    <input type="hidden" name="${model.nameBase}/emptyOption" value="true">
+    <input type="hidden" name="${model.nameBase}/emptyOption@TypeHint" value="Boolean">
+</div>

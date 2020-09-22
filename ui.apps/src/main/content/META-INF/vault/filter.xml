@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/aem-cf-extras"/>
+    <filter root="/apps/graphql-java"/>
+    <filter root="/apps/cq/core/content/nav/tools/aem-cfx"/>
+    <filter root="/apps/settings/dam/cfm/models/formbuilderconfig/datatypes/items/cfx-tab-placeholder"/>
+    <filter root="/apps/settings/dam/cfm/models/formbuilderconfig/datatypes/items/cfx-parent-field"/>
+    <filter root="/apps/settings/dam/cfm/models/formbuilderconfig/datatypes/items/cfx-child-field"/>
+    <filter root="/apps/settings/dam/cfm/models/formbuilderconfig/datatypes/items/cfx-image-field"/>
+    <filter root="/apps/settings/dam/cfm/models/formbuilderconfig/datatypes/items/cfx-datetime"/>
+    <filter root="/apps/settings/dam/cfm/models/formbuilderconfig/datatypes/items/cfx-id-field"/>
+    <filter root="/apps/settings/dam/cfm/models/formbuilderconfig/datatypes/items/cfx-tagfield"/>
+    <filter root="/apps/settings/dam/cfm/models/formbuilderconfig/datatypes/items/cfx-cf-reference-field"/>
+    <filter root="/apps/settings/dam/cfm/models/formbuilderconfig/datatypes/items/cfx-text-multi"/>
+    <filter root="/apps/settings/dam/cfm/models/formbuilderconfig/datatypes/items/cfx-datetime"/>
+    <filter root="/apps/dam/cfm/models/editor/components/datatypeproperties/cfxcfmselectfield"/>
+    <filter root="/apps/dam/cfm/models/editor/components/datatypeproperties/cfxmultiplecheckboxfield"/>
+    <filter root="/apps/dam/cfm/models/editor/components/datatypeproperties/cfxparentmodeloptionlist"/>
+    <filter root="/apps/dam/cfm/models/editor/components/datatypeproperties/cfxparentmodelpropertyname"/>
+    <filter root="/apps/dam/cfm/models/editor/components/datatypeproperties/cfxdatedataformatpicker"/>
+    <filter root="/apps/dam/cfm/models/editor/components/datatypeproperties/cfxchildfieldsearchroot"/>
+    <filter root="/apps/dam/cfm/admin/components/authoring/elementeditor"/>
+    <filter root="/apps/caffeine"/>
+</workspaceFilter>

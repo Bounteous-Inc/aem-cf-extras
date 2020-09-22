@@ -1,0 +1,9 @@
+<div class="coral-Form-fieldwrapper" data-sly-use.model="com.bounteous.core.models.datatypeproperties.CfxChildField">
+     <label class="coral-Form-fieldlabel" for="coral-id-15">Limit search to relative path</label>
+    <input class="coral-Form-field field-text-descriptor coral3-Textfield" type="text" name="${model.nameBase}/searchSubFolder"
+           placeholder="Enter optional relative path to limit search results"
+           value="${model.searchSubFolder}" data-foundation-validation="" data-validation="" is="coral-textfield" id="coral-id-${model.name}"
+           aria-invalid="false" title="Leaving this blank will result in child record search starting at the same location in the hierarchy that the content fragment resides.  Entering a value (IE: 'attachments/legal-docs') here would restrict results to items under that relative path starting at the location of this fragment.">
+    <input type="hidden" name="${model.nameBase}/emptyOption" value="true">
+    <input type="hidden" name="${model.nameBase}/emptyOption@TypeHint" value="Boolean">
+</div>

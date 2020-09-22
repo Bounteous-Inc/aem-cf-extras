@@ -1,0 +1,17 @@
+<sly data-sly-use.model="com.bounteous.core.models.datatypeproperties.CfxDateTimeField">
+    <div class="cfx-datetime">
+        <label class="coral-Form-fieldlabel" handle="labelWrapper" for="coral-id-${model.name}">
+            ${model.label}
+        </label>
+        <coral-datepicker data-cfminput="true" data-type="text" data-element="${model.name}" data-type-multi="false"
+                        placeholder="${model.format}" data-typehint="Date"
+                        valueformat="${model.format}" displayformat="${model.format}" type="${model.type}"
+                        name="${model.name}" value="${model.value}" data-foundation-validation=""
+                        data-validation="" class="coral-Form-field coral-InputGroup" aria-disabled="false"
+                        aria-required="false" aria-invalid="false" aria-readonly="false">
+            <input type="text" handle="input" class="" id="coral-id-${model.name}" role="textbox"
+                   value="${model.value}" name="${model.name}">
+        </coral-datepicker>
+        <input class="foundation-field-related" type="hidden" name="${model.name}@Delete">
+    </div>
+</sly>

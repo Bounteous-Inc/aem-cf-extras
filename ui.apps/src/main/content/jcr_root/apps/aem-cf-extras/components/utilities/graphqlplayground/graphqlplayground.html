@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset=utf-8/>
+    <meta name="viewport"
+          content="user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, minimal-ui">
+    <title>AEM CF Extras - GraphQL Playground</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/graphql-playground-react/build/static/css/index.css"/>
+    <link rel="shortcut icon" href="/libs/granite/core/content/login/favicon.ico"/>
+
+    <sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+         data-sly-call="${clientlib.css @ categories='coralui3,coralui2,cq.authoring.dialog,granite.ui.coral.foundation,granite.ui.shell,aem-cf-extras'}"
+    />
+</head>
+
+<body class="coral--light">
+<coral-shell>
+    <coral-shell-header class="coral--dark">
+        <coral-shell-header-home
+                data-globalnav-navigator-main-href="/mnt/overlay/granite/ui/content/shell/globalnav.html">
+            <a is="coral-shell-homeanchor" icon="adobeExperienceManagerColor" href="/">Adobe Experience Manager</a>
+        </coral-shell-header-home>
+        <coral-shell-header-actions>
+        </coral-shell-header-actions>
+    </coral-shell-header>
+    <coral-shell-content role="main">
+
+        <div id="root">
+            <style>
+                body {
+                    background-color: rgb(23, 42, 58);
+                    font-family: Open Sans, sans-serif;
+                    height: 90vh;
+                }
+
+                #root {
+                    height: 100%;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                .loading {
+                    font-size: 32px;
+                    font-weight: 200;
+                    color: rgba(255, 255, 255, .6);
+                    margin-left: 20px;
+                }
+
+                img {
+                    width: 78px;
+                    height: 78px;
+                }
+
+                .title {
+                    font-weight: 400;
+                }
+            </style>
+            <img src='//cdn.jsdelivr.net/npm/graphql-playground-react/build/logo.png' alt=''>
+            <div class="loading"> Loading
+                <span class="title">AEM CF Extras - GraphQL Playground</span>
+            </div>
+        </div>
+    </coral-shell-content>
+</coral-shell>
+
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+     data-sly-call="${clientlib.js @ categories='coralui3,coralui2,cq.authoring.editor,cq.authoring.dialog,granite.ui.coral.foundation,granite.ui.shell,cq.shared,cq.wcm.edit,aem-cf-extras.graphqlplayground'}"
+/>
+
+<script type="text/javascript">
+    //TODO: Currently you must add this servlet path to the list of excluded paths in the "Adobe Granite CSRF Filter" config.
+    // Need to find a way to pass the CSRF token in the header on each call to the servlet.
+    window.addEventListener('load', function (event) {
+        GraphQLPlayground.init(root, {
+            endpoint: "/bin/cfx/graphql",
+            isReloadingSchema: true,
+            fixedEndpoint: true,
+            shareEnabled: false,
+            settings: {
+                "request.credentials": "same-origin"
+            }
+        })
+    })
+</script>
+
+</body>
+</html>

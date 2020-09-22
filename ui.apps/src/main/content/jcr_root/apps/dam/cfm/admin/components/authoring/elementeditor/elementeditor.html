@@ -1,0 +1,24 @@
+<!-- /* This file overwrites '/libs/dam/cfm/admin/components/authoring/elementeditor/elementeditor.jsp'
+ (which is marked granite:FinalArea) to provide support for tabs. */ -->
+<sly data-sly-use.model="com.bounteous.core.cfm.admin.components.authoring.elementeditor.ElementEditor"></sly>
+
+<div class="cfm-Form" data-sly-test.hasTabs="${model.hasTabs}">
+    <coral-tabview>
+        <coral-tablist target="tabs-panelstack" data-sly-list.fragmentFieldKey="${model.fragmentFieldsMap}">
+            <coral-tab>
+                <coral-tab-label>${fragmentFieldKey}</coral-tab-label>
+            </coral-tab>
+        </coral-tablist>
+
+        <coral-panelstack id="tabs-panelstack" data-sly-list.fragmentFieldKey="${model.fragmentFieldsMap}">
+            <coral-panel data-sly-list.fragmentField="${model.fragmentFieldsMap[fragmentFieldKey]}">
+                <sly data-sly-resource="${fragmentField}"></sly>
+            </coral-panel>
+        </coral-panelstack>
+    </coral-tabview>
+
+    ${model.popFormData}
+</div>
+
+<sly data-sly-test="${!hasTabs}"
+     data-sly-include="/libs/dam/cfm/admin/components/authoring/elementeditor/elementeditor.jsp"></sly>

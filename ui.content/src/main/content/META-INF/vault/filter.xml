@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/conf/aem-cf-extras" mode="merge"/>
+    <filter root="/content/aem-cf-extras" mode="merge"/>
+    <filter root="/content/dam/aem-cf-extras" mode="merge"/>
+</workspaceFilter>

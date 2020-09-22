@@ -1,0 +1,23 @@
+<div class="coral-Form-fieldwrapper" data-sly-use.model="com.bounteous.core.models.datatypeproperties.CfxDateTimeField">
+    <label class="coral-Form-fieldlabel">Date/Time Format</label>
+    <coral-select name="${model.nameBase}/type" required>
+        <coral-select-item
+                value="date"
+                data-sly-attribute.selected="${'date' == model.type}">
+            Date
+        </coral-select-item>
+        <coral-select-item
+                value="datetime"
+                data-sly-attribute.selected="${'datetime' == model.type}">
+            Date&Time
+        </coral-select-item>
+        <coral-select-item
+                value="time"
+                data-sly-attribute.selected="${'time' == model.type}">
+            Time
+        </coral-select-item>
+    </coral-select>
+    <input type="hidden" name="${model.nameBase}/datasource/variant" value="default">
+    <input type="hidden" name="${model.nameBase}/emptyOption" value="true">
+    <input type="hidden" name="${model.nameBase}/emptyOption@TypeHint" value="String">
+</div>

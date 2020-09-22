@@ -1,0 +1,9 @@
+<div data-sly-use.model="com.bounteous.core.models.datatypeproperties.CfxIdField">
+    <div class="coral-Form-fieldwrapper" data-type="text" data-element="${model.name}" name="${model.name}">
+        <label class="coral-Form-fieldlabel" handle="labelWrapper" for="coral-id-${model.name}">
+            ${model.fieldLabel}
+        </label>
+        <input type="text" class="coral-Form-field coral-Textfield" handle="input" id="coral-id-${model.name}"
+               value="${model.value}" data-value="${model.value}" name="${model.name}" readonly="true">
+    </div>
+</div>

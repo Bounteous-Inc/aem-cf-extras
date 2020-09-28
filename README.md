@@ -1,4 +1,4 @@
-# aem-cf-extras
+# AEM CF Extras
 Extensions to AEM Content Fragments, including GraphQL support and additional model fields.
 
 ## Custom Fields

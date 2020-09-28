@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:isCheckedOut="{Boolean}true"
+    jcr:mixinTypes="[mix:referenceable,mix:versionable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="536324e3-99f7-4747-b2b5-49e46cab7c47">
+    <jcr:content
+        cq:lastReplicated="{Date}2020-09-27T21:51:54.589-07:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        cq:name="verizon"
+        cq:parentPath="/content/dam/aem-cf-extras/content-fragments/companies/verizon"
+        jcr:description=""
+        jcr:lastModified="{Date}2020-03-25T19:03:33.394-07:00"
+        jcr:lastModifiedBy="admin"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="dam:AssetContent"
+        jcr:title="Verizon"
+        contentFragment="{Boolean}true"
+        lastFragmentSave="{Date}2020-03-25T19:03:33.395-07:00">
+        <data
+            cq:model="/conf/aem-cf-extras/settings/dam/cfm/models/company"
+            jcr:primaryType="nt:unstructured">
+            <master
+                jcr:mixinTypes="[cq:Taggable]"
+                jcr:primaryType="nt:unstructured"
+                description="&lt;p>Verizon Wireless, is an American telecommunications company which offers wireless products and services. It is a wholly owned subsidiary of Verizon Communications. Verizon Wireless provides service to 118.7 million subscribers.&amp;nbsp; Verizon Wireless is the largest wireless telecommunications provider in the United States followed by AT&amp;amp;T.&lt;/p>&#xa;"
+                description_x0040_ContentType="text/html"
+                description_x0040_LastModified="{Date}2020-03-25T19:03:33.375-07:00"
+                displayName="Verizon"
+                displayName_x0040_LastModified="{Date}2020-03-25T19:03:33.374-07:00"
+                headquarters="Basking Ridge, NJ"
+                headquarters_x0040_LastModified="{Date}2020-03-25T19:03:33.375-07:00"
+                id_x0040_LastModified="{Date}2020-03-25T19:02:11.482-07:00"/>
+        </data>
+        <metadata
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:isCheckedOut="{Boolean}true"
+    jcr:mixinTypes="[mix:referenceable,mix:versionable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="a50a3c81-3601-454b-9e64-859492801eb0">
+    <jcr:content
+        cq:lastReplicated="{Date}2020-09-27T21:51:52.955-07:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        cq:name="red-bull"
+        cq:parentPath="/content/dam/aem-cf-extras/content-fragments/companies/red-bull"
+        jcr:description=""
+        jcr:lastModified="{Date}2020-03-25T18:43:38.490-07:00"
+        jcr:lastModifiedBy="admin"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="dam:AssetContent"
+        jcr:title="Red Bull"
+        contentFragment="{Boolean}true"
+        lastFragmentSave="{Date}2020-03-25T18:43:38.490-07:00">
+        <data
+            cq:model="/conf/aem-cf-extras/settings/dam/cfm/models/company"
+            jcr:primaryType="nt:unstructured">
+            <master
+                jcr:mixinTypes="[cq:Taggable]"
+                jcr:primaryType="nt:unstructured"
+                description="&lt;p>Red Bull is an energy drink sold by Red Bull GmbH, an Austrian company created in 1987. Red Bull has the highest market share of any energy drink in the world, with 6.790 billion cans sold in a year (as of 2018).&lt;/p>&#xa;"
+                description_x0040_ContentType="text/html"
+                description_x0040_LastModified="{Date}2020-03-25T18:43:38.461-07:00"
+                displayName="Red Bull"
+                displayName_x0040_LastModified="{Date}2020-03-25T18:43:38.461-07:00"
+                headquarters="Fuschl, Austria"
+                headquarters_x0040_LastModified="{Date}2020-03-25T18:43:38.461-07:00"
+                id_x0040_LastModified="{Date}2020-03-25T18:42:30.060-07:00"/>
+        </data>
+        <metadata
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

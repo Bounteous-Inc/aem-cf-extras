@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:isCheckedOut="{Boolean}true"
+    jcr:mixinTypes="[mix:referenceable,mix:versionable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="b243e1dd-5c13-4cb4-8461-4c4fec6ecd22">
+    <jcr:content
+        cq:lastReplicated="{Date}2020-09-27T21:51:35.037-07:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        cq:name="national-league"
+        cq:parentPath="/content/dam/aem-cf-extras/content-fragments/sports/baseball/organizations/major-league-baseball/conferences/national-league"
+        jcr:description=""
+        jcr:lastModified="{Date}2020-03-25T19:46:20.529-07:00"
+        jcr:lastModifiedBy="admin"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="dam:AssetContent"
+        jcr:title="National League"
+        contentFragment="{Boolean}true"
+        lastFragmentSave="{Date}2020-03-25T19:46:20.529-07:00">
+        <data
+            cq:model="/conf/aem-cf-extras/settings/dam/cfm/models/conference"
+            jcr:primaryType="nt:unstructured">
+            <master
+                jcr:mixinTypes="[cq:Taggable]"
+                jcr:primaryType="nt:unstructured"
+                description="&lt;p>The National League of Professional Baseball Clubs, known simply as the National League (NL), is the older of two leagues constituting Major League Baseball (MLB) in the United States and Canada, and the world's oldest current professional team sports league. Founded on February 2, 1876, to replace the National Association of Professional Base Ball Players (NAPBBP) of 1871–1875 (often called simply the &amp;quot;National Association&amp;quot;), the NL is sometimes called the Senior Circuit, in contrast to MLB's other league, the American League, which was founded 25 years later and is called the &amp;quot;Junior Circuit&amp;quot;.&amp;nbsp;&lt;/p>&#xa;"
+                description_x0040_ContentType="text/html"
+                description_x0040_LastModified="{Date}2020-03-25T19:46:20.503-07:00"
+                displayName="National League"
+                displayName_x0040_LastModified="{Date}2020-03-25T19:46:20.503-07:00"
+                divisions_x0040_LastModified="{Date}2020-03-25T19:37:55.927-07:00"
+                headquarters_x0040_LastModified="{Date}2020-03-25T19:46:20.503-07:00"
+                id_x0040_LastModified="{Date}2020-03-25T19:37:55.927-07:00"
+                website_x0040_LastModified="{Date}2020-03-25T19:46:20.503-07:00"/>
+        </data>
+        <metadata
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

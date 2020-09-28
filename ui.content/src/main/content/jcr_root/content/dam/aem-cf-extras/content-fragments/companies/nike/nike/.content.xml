@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:isCheckedOut="{Boolean}true"
+    jcr:mixinTypes="[mix:referenceable,mix:versionable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="5706c289-bf06-4670-a84f-2340775336a7">
+    <jcr:content
+        cq:lastReplicated="{Date}2020-09-27T21:51:51.780-07:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        cq:name="nike"
+        cq:parentPath="/content/dam/aem-cf-extras/content-fragments/companies/nike"
+        jcr:description=""
+        jcr:lastModified="{Date}2020-03-25T18:37:24.836-07:00"
+        jcr:lastModifiedBy="admin"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="dam:AssetContent"
+        jcr:title="Nike"
+        contentFragment="{Boolean}true"
+        lastFragmentSave="{Date}2020-03-25T18:37:24.836-07:00">
+        <data
+            cq:model="/conf/aem-cf-extras/settings/dam/cfm/models/company"
+            jcr:primaryType="nt:unstructured">
+            <master
+                jcr:mixinTypes="[cq:Taggable]"
+                jcr:primaryType="nt:unstructured"
+                description="&lt;p>Nike, Inc. is an American multinational corporation that is engaged in the design, development, manufacturing, and worldwide marketing and sales of footwear, apparel, equipment, accessories, and services. The company is headquartered near Beaverton, Oregon, in the Portland metropolitan area. It is the world's largest supplier of athletic shoes and apparel and a major manufacturer of sports equipment, with revenue in excess of US$24.1 billion in its fiscal year 2012 (ending May 31, 2012). As of 2012, it employed more than 44,000 people worldwide. In 2014 the brand alone was valued at $19 billion, making it the most valuable brand among sports businesses. As of 2017, the Nike brand is valued at $29.6 billion. Nike ranked No. 89 in the 2018 Fortune 500 list of the largest United States corporations by total revenue.&amp;nbsp;&lt;/p>&#xa;"
+                description_x0040_ContentType="text/html"
+                description_x0040_LastModified="{Date}2020-03-25T18:37:24.803-07:00"
+                displayName="Nike"
+                displayName_x0040_LastModified="{Date}2020-03-25T18:37:24.802-07:00"
+                headquarters="Beaverton, OR"
+                headquarters_x0040_LastModified="{Date}2020-03-25T18:37:24.803-07:00"
+                id_x0040_LastModified="{Date}2020-03-25T18:36:11.419-07:00"/>
+        </data>
+        <metadata
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

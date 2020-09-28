@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:isCheckedOut="{Boolean}true"
+    jcr:mixinTypes="[mix:referenceable,mix:versionable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="1bf0ab5c-c4da-4f9a-8377-e6c8616847db">
+    <jcr:content
+        cq:lastReplicated="{Date}2020-09-27T21:51:40.277-07:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        cq:name="cardinals"
+        cq:parentPath="/content/dam/aem-cf-extras/content-fragments/sports/baseball/organizations/major-league-baseball/conferences/national-league/divisions/central/teams/cardinals"
+        jcr:description=""
+        jcr:lastModified="{Date}2020-03-25T22:48:27.399-07:00"
+        jcr:lastModifiedBy="admin"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="dam:AssetContent"
+        jcr:title="Cardinals"
+        contentFragment="{Boolean}true"
+        lastFragmentSave="{Date}2020-03-25T22:48:27.399-07:00">
+        <data
+            cq:model="/conf/aem-cf-extras/settings/dam/cfm/models/team"
+            jcr:primaryType="nt:unstructured">
+            <master
+                jcr:mixinTypes="[cq:Taggable]"
+                jcr:primaryType="nt:unstructured"
+                city="St. Louis"
+                city_x0040_LastModified="{Date}2020-03-25T22:48:27.374-07:00"
+                description="&lt;p>The St. Louis Cardinals are an American professional baseball team based in St. Louis, Missouri. The Cardinals compete in Major League Baseball (MLB) as a member club of the National League (NL) Central division. Busch Stadium has been their home ballpark since 2006. One of the nation's oldest and most successful professional baseball clubs, the Cardinals have won 11 World Series championships, more than any other NL team and second in MLB only to the New York Yankees. The team has won 19 National League pennants, third-most of any team. St. Louis has also won 14 division titles in the East and Central divisions.&amp;nbsp;&lt;/p>&#xa;"
+                description_x0040_ContentType="text/html"
+                description_x0040_LastModified="{Date}2020-03-25T22:48:27.374-07:00"
+                displayName="Cardinals"
+                displayName_x0040_LastModified="{Date}2020-03-25T22:48:27.374-07:00"
+                id_x0040_LastModified="{Date}2020-03-25T22:47:33.902-07:00"
+                logo="/content/dam/aem-cf-extras/team-logos/St._Louis_Cardinals.svg"
+                logo_x0040_LastModified="{Date}2020-03-25T22:48:27.375-07:00"
+                players_x0040_LastModified="{Date}2020-03-25T22:47:33.902-07:00"
+                state="[aem-cf-extras:states/missouri]"
+                state_x0040_LastModified="{Date}2020-03-25T22:48:27.375-07:00"/>
+        </data>
+        <metadata
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:isCheckedOut="{Boolean}true"
+    jcr:mixinTypes="[mix:referenceable,mix:versionable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="751dea55-e5f9-4eb4-8372-d8ab2cbe8ac2">
+    <jcr:content
+        cq:lastReplicated="{Date}2020-09-27T21:51:54.589-07:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        cq:name="chase"
+        cq:parentPath="/content/dam/aem-cf-extras/content-fragments/companies/chase"
+        jcr:description=""
+        jcr:lastModified="{Date}2020-03-25T18:58:44.888-07:00"
+        jcr:lastModifiedBy="admin"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="dam:AssetContent"
+        jcr:title="Chase"
+        contentFragment="{Boolean}true"
+        lastFragmentSave="{Date}2020-03-25T18:58:44.888-07:00">
+        <data
+            cq:model="/conf/aem-cf-extras/settings/dam/cfm/models/company"
+            jcr:primaryType="nt:unstructured">
+            <master
+                jcr:mixinTypes="[cq:Taggable]"
+                jcr:primaryType="nt:unstructured"
+                description="&lt;p>JPMorgan Chase Bank, N.A., doing business as Chase Bank, is a national bank headquartered in Manhattan, New York City, that constitutes the consumer and commercial banking subsidiary of the U.S. multinational banking and financial services holding company, JPMorgan Chase. The bank was known as Chase Manhattan Bank until it merged with J.P. Morgan &amp;amp; Co. in 2000. Chase Manhattan Bank was formed by the merger of the Chase National Bank and The Manhattan Company in 1955. The bank merged with Bank One Corporation in 2004 and later acquired the deposits and most assets of The Washington Mutual.&amp;nbsp;&lt;/p>&#xa;"
+                description_x0040_ContentType="text/html"
+                description_x0040_LastModified="{Date}2020-03-25T18:58:44.867-07:00"
+                displayName="Chase"
+                displayName_x0040_LastModified="{Date}2020-03-25T18:58:44.867-07:00"
+                headquarters="New York City, New York"
+                headquarters_x0040_LastModified="{Date}2020-03-25T18:58:44.868-07:00"
+                id_x0040_LastModified="{Date}2020-03-25T18:57:40.467-07:00"/>
+        </data>
+        <metadata
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

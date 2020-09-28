@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="sling:OrderedFolder">
+    <jcr:content
+        cq:lastReplicated="{Date}2020-09-27T21:51:54.589-07:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="nt:unstructured"
+        jcr:title="Team Logos"
+        sourcing="false">
+        <folderThumbnail/>
+    </jcr:content>
+    <Pittsburgh_Pirates.svg/>
+    <Atlanta_Braves.svg/>
+    <Arizona_Diamondbacks.svg/>
+    <Baltimore_Orioles.svg/>
+    <Boston_Red_Sox.svg/>
+    <Chicago_Cubs.svg/>
+    <Cincinnati_Reds.svg/>
+    <Colorado_Rockies.svg/>
+    <Los_Angeles_Dodgers.svg/>
+    <Miami_Marlins.svg/>
+    <Milwaukee_Brewers.svg/>
+    <New_York_Mets.svg/>
+    <New_York_Yankees.svg/>
+    <Philadelphia_Phillies.svg/>
+    <San_Francisco_Giants.svg/>
+    <SD_Logo.svg/>
+    <St._Louis_Cardinals.svg/>
+    <Tampa_Bay_Rays.svg/>
+    <Toronto_Blue_Jays.svg/>
+    <Washington_Nationals.svg/>
+    <Chicago_White_Sox.svg/>
+    <Texas_Rangers.svg/>
+    <Seattle_Mariners.svg/>
+    <Oakland_As.svg/>
+    <Los_Angeles_Angels_of_Anaheim.svg/>
+    <Houston-Astros.svg/>
+    <Minnesota_Twins.svg/>
+    <Kansas_City_Royals.svg/>
+    <Detroit_Tigers.svg/>
+    <Cleveland_Indians.svg/>
+</jcr:root>

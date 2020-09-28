@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:isCheckedOut="{Boolean}true"
+    jcr:mixinTypes="[mix:referenceable,mix:versionable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="276dfc5c-fb3b-473b-a9d5-bb138455d7bc">
+    <jcr:content
+        cq:lastReplicated="{Date}2020-09-27T21:51:52.955-07:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        cq:name="gopro"
+        cq:parentPath="/content/dam/aem-cf-extras/content-fragments/companies/gopro"
+        jcr:description=""
+        jcr:lastModified="{Date}2020-03-25T18:49:50.890-07:00"
+        jcr:lastModifiedBy="admin"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="dam:AssetContent"
+        jcr:title="GoPro"
+        contentFragment="{Boolean}true"
+        lastFragmentSave="{Date}2020-03-25T18:49:50.890-07:00">
+        <data
+            cq:model="/conf/aem-cf-extras/settings/dam/cfm/models/company"
+            jcr:primaryType="nt:unstructured">
+            <master
+                jcr:mixinTypes="[cq:Taggable]"
+                jcr:primaryType="nt:unstructured"
+                description="&lt;p>GoPro, Inc. is an American technology company founded in 2002 by Nick Woodman. It manufactures action cameras and develops its own mobile apps and video-editing software. Founded as Woodman Labs, Inc, the company eventually focused on the connected sports genre, developing its line of action cameras and, later, video editing software.&amp;nbsp;&lt;/p>&#xa;"
+                description_x0040_ContentType="text/html"
+                description_x0040_LastModified="{Date}2020-03-25T18:49:50.872-07:00"
+                displayName="GoPro"
+                displayName_x0040_LastModified="{Date}2020-03-25T18:49:50.872-07:00"
+                headquarters="San Mateo, California"
+                headquarters_x0040_LastModified="{Date}2020-03-25T18:49:50.873-07:00"
+                id_x0040_LastModified="{Date}2020-03-25T18:49:03.188-07:00"/>
+        </data>
+        <metadata
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

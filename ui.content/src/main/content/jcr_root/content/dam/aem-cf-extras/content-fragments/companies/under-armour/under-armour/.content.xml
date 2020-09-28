@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:isCheckedOut="{Boolean}true"
+    jcr:mixinTypes="[mix:referenceable,mix:versionable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="bc61cae1-819a-4bb8-8b93-8547810f27e7">
+    <jcr:content
+        cq:lastReplicated="{Date}2020-09-27T21:51:54.589-07:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        cq:name="under-armour"
+        cq:parentPath="/content/dam/aem-cf-extras/content-fragments/companies/under-armour"
+        jcr:description=""
+        jcr:lastModified="{Date}2020-03-25T19:01:21.341-07:00"
+        jcr:lastModifiedBy="admin"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="dam:AssetContent"
+        jcr:title="Under Armour"
+        contentFragment="{Boolean}true"
+        lastFragmentSave="{Date}2020-03-25T19:01:21.341-07:00">
+        <data
+            cq:model="/conf/aem-cf-extras/settings/dam/cfm/models/company"
+            jcr:primaryType="nt:unstructured">
+            <master
+                jcr:mixinTypes="[cq:Taggable]"
+                jcr:primaryType="nt:unstructured"
+                description="&lt;p>Under Armour, Inc. is an American company that manufactures footwear, sports, and casual apparel. Under Armour's global headquarters are located in Baltimore, Maryland with additional offices located in Amsterdam (European headquarters), Austin, Guangzhou, Hong Kong, Houston, Jakarta, London, Mexico City, Munich, New York City, Panama City (international headquarters), Paris, Pittsburgh, Portland, San Francisco, São Paulo, Santiago, Seoul, Shanghai (Greater Chinese headquarters), and Toronto.[&lt;/p>&#xa;"
+                description_x0040_ContentType="text/html"
+                description_x0040_LastModified="{Date}2020-03-25T19:01:21.324-07:00"
+                displayName="Under Armour"
+                displayName_x0040_LastModified="{Date}2020-03-25T19:01:21.324-07:00"
+                headquarters="Baltimore, Maryland"
+                headquarters_x0040_LastModified="{Date}2020-03-25T19:01:21.325-07:00"
+                id_x0040_LastModified="{Date}2020-03-25T19:00:28.970-07:00"/>
+        </data>
+        <metadata
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

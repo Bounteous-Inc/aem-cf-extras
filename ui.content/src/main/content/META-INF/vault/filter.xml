@@ -3,4 +3,5 @@
     <filter root="/conf/aem-cf-extras" mode="merge"/>
     <filter root="/content/aem-cf-extras" mode="merge"/>
     <filter root="/content/dam/aem-cf-extras" mode="merge"/>
+    <filter root="/content/_cq_tags/aem-cf-extras" mode="merge"/>
 </workspaceFilter>

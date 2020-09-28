@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:isCheckedOut="{Boolean}true"
+    jcr:mixinTypes="[mix:referenceable,mix:versionable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="e7e8859f-84f1-4974-8e4c-73ef9d131e36">
+    <jcr:content
+        cq:lastReplicated="{Date}2020-09-27T21:51:51.780-07:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        cq:name="gatorade"
+        cq:parentPath="/content/dam/aem-cf-extras/content-fragments/companies/gatorade"
+        jcr:description=""
+        jcr:lastModified="{Date}2020-03-25T18:41:44.364-07:00"
+        jcr:lastModifiedBy="admin"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="dam:AssetContent"
+        jcr:title="Gatorade"
+        contentFragment="{Boolean}true"
+        lastFragmentSave="{Date}2020-03-25T18:41:44.364-07:00">
+        <data
+            cq:model="/conf/aem-cf-extras/settings/dam/cfm/models/company"
+            jcr:primaryType="nt:unstructured">
+            <master
+                jcr:mixinTypes="[cq:Taggable]"
+                jcr:primaryType="nt:unstructured"
+                description="&lt;p>The Gatorade Company, Inc. is an American manufacturer of sports-themed beverage and food products, built around its signature line of sports drinks. Gatorade is currently manufactured by PepsiCo and is distributed in over 80 countries. The beverage was first developed in 1965 by a team of researchers led by Robert Cade. It was originally made for the Gators at the University of Florida to replenish the carbohydrates that the school's student-athletes burned and the combination of water and electrolytes that they lost in sweat during rigorous sports activities.&amp;nbsp;&lt;/p>&#xa;"
+                description_x0040_ContentType="text/html"
+                description_x0040_LastModified="{Date}2020-03-25T18:41:44.331-07:00"
+                displayName="Gatorade"
+                displayName_x0040_LastModified="{Date}2020-03-25T18:41:44.330-07:00"
+                headquarters="Chicago, IL"
+                headquarters_x0040_LastModified="{Date}2020-03-25T18:41:44.331-07:00"
+                id_x0040_LastModified="{Date}2020-03-25T18:40:30.457-07:00"/>
+        </data>
+        <metadata
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

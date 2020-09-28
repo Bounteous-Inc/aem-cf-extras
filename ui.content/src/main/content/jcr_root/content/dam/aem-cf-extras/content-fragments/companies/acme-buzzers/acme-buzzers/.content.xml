@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:isCheckedOut="{Boolean}true"
+    jcr:mixinTypes="[mix:referenceable,mix:versionable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="7f7b72eb-8bf5-42be-8502-c9ae6c37cf07">
+    <jcr:content
+        cq:lastReplicated="{Date}2020-09-27T21:51:52.955-07:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        cq:name="acme-buzzers"
+        cq:parentPath="/content/dam/aem-cf-extras/content-fragments/companies/acme-buzzers"
+        jcr:description=""
+        jcr:lastModified="{Date}2020-03-25T18:54:19.957-07:00"
+        jcr:lastModifiedBy="admin"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="dam:AssetContent"
+        jcr:title="ACME Buzzers"
+        contentFragment="{Boolean}true"
+        lastFragmentSave="{Date}2020-03-25T18:54:19.957-07:00">
+        <data
+            cq:model="/conf/aem-cf-extras/settings/dam/cfm/models/company"
+            jcr:primaryType="nt:unstructured">
+            <master
+                jcr:mixinTypes="[cq:Taggable]"
+                jcr:primaryType="nt:unstructured"
+                description="&lt;p>ACME Buzzers is the top producers of remote buzzers in the world.&amp;nbsp; They take pride in the fact that these buzzers have a remote distance greater than the length of a major league baseball field.&amp;nbsp; You can rest assured that these buzzers are reliable or your money back.&lt;/p>&#xa;"
+                description_x0040_ContentType="text/html"
+                description_x0040_LastModified="{Date}2020-03-25T18:54:19.934-07:00"
+                displayName="ACME Buzzers"
+                displayName_x0040_LastModified="{Date}2020-03-25T18:54:19.934-07:00"
+                headquarters="Scranton, PA"
+                headquarters_x0040_LastModified="{Date}2020-03-25T18:54:19.934-07:00"
+                id_x0040_LastModified="{Date}2020-03-25T18:51:11.725-07:00"/>
+        </data>
+        <metadata
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

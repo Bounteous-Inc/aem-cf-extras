@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:isCheckedOut="{Boolean}true"
+    jcr:mixinTypes="[mix:referenceable,mix:versionable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="8eee54d0-7308-4273-82fc-76facf253a4a">
+    <jcr:content
+        cq:lastReplicated="{Date}2020-09-27T21:51:51.780-07:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        cq:name="national"
+        cq:parentPath="/content/dam/aem-cf-extras/content-fragments/sports/football/organizations/national-football-league/conferences/national"
+        jcr:description=""
+        jcr:lastModified="{Date}2020-03-26T02:32:51.261-07:00"
+        jcr:lastModifiedBy="admin"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="dam:AssetContent"
+        jcr:title="National"
+        contentFragment="{Boolean}true"
+        lastFragmentSave="{Date}2020-03-26T02:32:51.261-07:00">
+        <data
+            cq:model="/conf/aem-cf-extras/settings/dam/cfm/models/conference"
+            jcr:primaryType="nt:unstructured">
+            <master
+                jcr:mixinTypes="[cq:Taggable]"
+                jcr:primaryType="nt:unstructured"
+                description="&lt;p>The National Football Conference (NFC) is one of the two conferences of the National Football League (NFL), the highest professional level of American football in the United States. This conference and its counterpart, the American Football Conference (AFC), currently contain 16 teams organized into 4 divisions. Both conferences were created as part of the 1970 merger with the rival American Football League (AFL), with all ten of the former AFL teams and three NFL teams forming the AFC while the remaining thirteen NFL clubs formed the NFC. A series of league expansions and division realignments have occurred since the merger, thus making the current total of 16 clubs in each conference. The current NFC champions are the San Francisco 49ers, who defeated the Green Bay Packers in the 2019 NFC Championship Game for their seventh conference championship.&amp;nbsp;&lt;/p>&#xa;"
+                description_x0040_ContentType="text/html"
+                description_x0040_LastModified="{Date}2020-03-26T02:32:51.175-07:00"
+                displayName="National"
+                displayName_x0040_LastModified="{Date}2020-03-26T02:32:51.175-07:00"
+                divisions_x0040_LastModified="{Date}2020-03-26T02:32:26.076-07:00"
+                id_x0040_LastModified="{Date}2020-03-26T02:32:26.076-07:00"/>
+        </data>
+        <metadata
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

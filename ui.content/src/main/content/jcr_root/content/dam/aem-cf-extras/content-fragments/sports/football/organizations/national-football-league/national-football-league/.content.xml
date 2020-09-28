@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:isCheckedOut="{Boolean}true"
+    jcr:mixinTypes="[mix:referenceable,mix:versionable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="d783d969-68e1-4a3d-b7af-c10fb0fe1156">
+    <jcr:content
+        cq:lastReplicated="{Date}2020-09-27T21:51:50.545-07:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        cq:name="national-football-league"
+        cq:parentPath="/content/dam/aem-cf-extras/content-fragments/sports/football/organizations/national-football-league"
+        jcr:description=""
+        jcr:lastModified="{Date}2020-03-26T02:31:42.107-07:00"
+        jcr:lastModifiedBy="admin"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="dam:AssetContent"
+        jcr:title="National Football League"
+        contentFragment="{Boolean}true"
+        lastFragmentSave="{Date}2020-03-26T02:31:42.107-07:00">
+        <data
+            cq:model="/conf/aem-cf-extras/settings/dam/cfm/models/organization"
+            jcr:primaryType="nt:unstructured">
+            <master
+                jcr:mixinTypes="[cq:Taggable]"
+                jcr:primaryType="nt:unstructured"
+                abbreviation="NFL"
+                abbreviation_x0040_LastModified="{Date}2020-03-26T02:31:42.076-07:00"
+                commissioner="Roger Goodell"
+                commissioner_x0040_LastModified="{Date}2020-03-26T02:31:42.076-07:00"
+                conferences_x0040_LastModified="{Date}2020-03-26T02:31:05.022-07:00"
+                description="&lt;p>The National Football League (NFL) is a professional American football league consisting of 32 teams, divided equally between the National Football Conference (NFC) and the American Football Conference (AFC). The NFL is one of the four major professional sports leagues in North America and the highest professional level of American football in the world.[4] The NFL's 17-week regular season runs from early September to late December, with each team playing 16 games and having one bye week. Following the conclusion of the regular season, seven teams from each conference (four division winners and three wild card teams) advance to the playoffs, a single-elimination tournament culminating in the Super Bowl, which is usually held on the first Sunday in February and is played between the champions of the NFC and AFC.&amp;nbsp;&lt;/p>&#xa;"
+                description_x0040_ContentType="text/html"
+                description_x0040_LastModified="{Date}2020-03-26T02:31:42.075-07:00"
+                displayName="National Football League"
+                displayName_x0040_LastModified="{Date}2020-03-26T02:31:42.075-07:00"
+                headquarters="New York City, New York"
+                headquarters_x0040_LastModified="{Date}2020-03-26T02:31:42.076-07:00"
+                id_x0040_LastModified="{Date}2020-03-26T02:31:05.022-07:00"/>
+        </data>
+        <metadata
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

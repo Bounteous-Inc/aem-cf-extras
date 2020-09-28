@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:isCheckedOut="{Boolean}true"
+    jcr:mixinTypes="[mix:referenceable,mix:versionable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="eb8f93e5-414b-40a9-92d0-b70ea5452287">
+    <jcr:content
+        cq:lastReplicated="{Date}2020-09-27T21:51:49.256-07:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        cq:name="national-basketball-association"
+        cq:parentPath="/content/dam/aem-cf-extras/content-fragments/sports/basketball/organizations/national-basketball-association"
+        jcr:description=""
+        jcr:lastModified="{Date}2020-03-26T02:27:48.954-07:00"
+        jcr:lastModifiedBy="admin"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="dam:AssetContent"
+        jcr:title="National Basketball Association"
+        contentFragment="{Boolean}true"
+        lastFragmentSave="{Date}2020-03-26T02:27:48.954-07:00">
+        <data
+            cq:model="/conf/aem-cf-extras/settings/dam/cfm/models/organization"
+            jcr:primaryType="nt:unstructured">
+            <master
+                jcr:mixinTypes="[cq:Taggable]"
+                jcr:primaryType="nt:unstructured"
+                abbreviation="NBA"
+                abbreviation_x0040_LastModified="{Date}2020-03-26T02:27:48.928-07:00"
+                commissioner="Adam Silver"
+                commissioner_x0040_LastModified="{Date}2020-03-26T02:27:48.928-07:00"
+                conferences_x0040_LastModified="{Date}2020-03-26T02:27:06.515-07:00"
+                description="&lt;p>The National Basketball Association (NBA) is a men's professional basketball league in North America, composed of 30 teams (29 in the United States and 1 in Canada). It is one of the four major professional sports leagues in the United States and Canada, and is widely considered to be the premier men's professional basketball league in the world.&lt;/p>&#xa;"
+                description_x0040_ContentType="text/html"
+                description_x0040_LastModified="{Date}2020-03-26T02:27:48.927-07:00"
+                displayName="National Basketball Association"
+                displayName_x0040_LastModified="{Date}2020-03-26T02:27:48.927-07:00"
+                headquarters="New York City, New York"
+                headquarters_x0040_LastModified="{Date}2020-03-26T02:27:48.928-07:00"
+                id_x0040_LastModified="{Date}2020-03-26T02:27:06.515-07:00"/>
+        </data>
+        <metadata
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

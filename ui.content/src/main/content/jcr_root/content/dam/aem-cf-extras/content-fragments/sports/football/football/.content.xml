@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:isCheckedOut="{Boolean}true"
+    jcr:mixinTypes="[mix:referenceable,mix:versionable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="24ac9512-811e-46d1-ac2b-a1fbc4aa2183">
+    <jcr:content
+        cq:lastReplicated="{Date}2020-09-27T21:51:50.545-07:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        cq:name="football"
+        cq:parentPath="/content/dam/aem-cf-extras/content-fragments/sports/football"
+        jcr:description=""
+        jcr:lastModified="{Date}2020-03-25T11:27:50.684-07:00"
+        jcr:lastModifiedBy="admin"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="dam:AssetContent"
+        jcr:title="Football"
+        contentFragment="{Boolean}true"
+        lastFragmentSave="{Date}2020-03-25T11:27:50.685-07:00">
+        <data
+            cq:model="/conf/aem-cf-extras/settings/dam/cfm/models/sport"
+            jcr:primaryType="nt:unstructured">
+            <master
+                jcr:mixinTypes="[cq:Taggable]"
+                jcr:primaryType="nt:unstructured"
+                description="&lt;p>American football, referred to as football in the United States and Canada and also known as gridiron,[nb 1] is a team sport played by two teams of eleven players on a rectangular field with goalposts at each end. The offense, the team with possession of the oval-shaped football, attempts to advance down the field by running with the ball or passing it, while the defense, the team without possession of the ball, aims to stop the offense's advance and to take control of the ball for themselves. The offense must advance at least ten yards in four downs or plays; if they fail, they turn over the football to the defense, but if they succeed, they are given a new set of four downs to continue the drive. Points are scored primarily by advancing the ball into the opposing team's end zone for a touchdown or kicking the ball through the opponent's goalposts for a field goal. The team with the most points at the end of a game wins.&lt;/p>&#xa;"
+                description_x0040_ContentType="text/html"
+                description_x0040_LastModified="{Date}2020-03-25T11:27:50.659-07:00"
+                displayName="Football"
+                displayName_x0040_LastModified="{Date}2020-03-25T11:27:50.658-07:00"
+                equipment="[Football,Football Helmet,Pads]"
+                equipment_x0040_LastModified="{Date}2020-03-25T11:27:50.659-07:00"
+                id_x0040_LastModified="{Date}2020-03-25T11:25:41.150-07:00"/>
+        </data>
+        <metadata
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

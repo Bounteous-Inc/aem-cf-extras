@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:isCheckedOut="{Boolean}true"
+    jcr:mixinTypes="[mix:referenceable,mix:versionable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="accb6ac3-4a85-40b1-9082-0e2140006616">
+    <jcr:content
+        cq:lastReplicated="{Date}2020-09-27T21:51:43.057-07:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        cq:name="american-league"
+        cq:parentPath="/content/dam/aem-cf-extras/content-fragments/sports/baseball/organizations/major-league-baseball/conferences/american-league"
+        jcr:description=""
+        jcr:lastModified="{Date}2020-03-25T19:50:46.753-07:00"
+        jcr:lastModifiedBy="admin"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="dam:AssetContent"
+        jcr:title="American League"
+        contentFragment="{Boolean}true"
+        lastFragmentSave="{Date}2020-03-25T19:50:46.753-07:00">
+        <data
+            cq:model="/conf/aem-cf-extras/settings/dam/cfm/models/conference"
+            jcr:primaryType="nt:unstructured">
+            <master
+                jcr:mixinTypes="[cq:Taggable]"
+                jcr:primaryType="nt:unstructured"
+                description="&lt;p>The American League of Professional Baseball Clubs, or simply the American League (AL), is one of two leagues that make up Major League Baseball (MLB) in the United States and Canada. It developed from the Western League, a minor league based in the Great Lakes states, which eventually aspired to major league status. It is sometimes called the Junior Circuit because it claimed Major League status for the 1901 season, 25 years after the formation of the National League (the &amp;quot;Senior Circuit&amp;quot;).&amp;nbsp;&lt;/p>&#xa;"
+                description_x0040_ContentType="text/html"
+                description_x0040_LastModified="{Date}2020-03-25T19:50:46.719-07:00"
+                displayName="American League"
+                displayName_x0040_LastModified="{Date}2020-03-25T19:50:46.719-07:00"
+                divisions_x0040_LastModified="{Date}2020-03-25T19:50:02.551-07:00"
+                id_x0040_LastModified="{Date}2020-03-25T19:50:02.551-07:00"/>
+        </data>
+        <metadata
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

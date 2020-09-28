@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:isCheckedOut="{Boolean}true"
+    jcr:mixinTypes="[mix:referenceable,mix:versionable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="4b2c6603-d226-4c84-aae7-37c071b94be1">
+    <jcr:content
+        cq:lastReplicated="{Date}2020-09-27T21:51:54.589-07:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        cq:name="microsoft"
+        cq:parentPath="/content/dam/aem-cf-extras/content-fragments/companies/microsoft"
+        jcr:description=""
+        jcr:lastModified="{Date}2020-03-25T19:05:51.110-07:00"
+        jcr:lastModifiedBy="admin"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="dam:AssetContent"
+        jcr:title="Microsoft"
+        contentFragment="{Boolean}true"
+        lastFragmentSave="{Date}2020-03-25T19:05:51.110-07:00">
+        <data
+            cq:model="/conf/aem-cf-extras/settings/dam/cfm/models/company"
+            jcr:primaryType="nt:unstructured">
+            <master
+                jcr:mixinTypes="[cq:Taggable]"
+                jcr:primaryType="nt:unstructured"
+                description="&lt;p>Microsoft Corporation is an American multinational technology company with headquarters in Redmond, Washington. It develops, manufactures, licenses, supports, and sells computer software, consumer electronics, personal computers, and related services. Its best known software products are the Microsoft Windows line of operating systems, the Microsoft Office suite, and the Internet Explorer and Edge web browsers. Its flagship hardware products are the Xbox video game consoles and the Microsoft Surface lineup of touchscreen personal computers. In 2016, it was the world's largest software maker by revenue (currently Alphabet/Google has more revenue). The word &amp;quot;Microsoft&amp;quot; is a portmanteau of &amp;quot;microcomputer&amp;quot; and &amp;quot;software&amp;quot;. Microsoft is ranked No. 30 in the 2018 Fortune 500 rankings of the largest United States corporations by total revenue.&lt;/p>&#xa;"
+                description_x0040_ContentType="text/html"
+                description_x0040_LastModified="{Date}2020-03-25T19:05:51.085-07:00"
+                displayName="Microsoft"
+                displayName_x0040_LastModified="{Date}2020-03-25T19:05:51.085-07:00"
+                headquarters="Redmond, WA"
+                headquarters_x0040_LastModified="{Date}2020-03-25T19:05:51.086-07:00"
+                id_x0040_LastModified="{Date}2020-03-25T19:04:14.850-07:00"/>
+        </data>
+        <metadata
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

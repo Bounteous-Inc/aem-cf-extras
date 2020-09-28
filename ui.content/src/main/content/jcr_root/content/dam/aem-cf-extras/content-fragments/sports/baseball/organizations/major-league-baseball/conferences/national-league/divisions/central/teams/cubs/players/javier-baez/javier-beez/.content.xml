@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:isCheckedOut="{Boolean}true"
+    jcr:mixinTypes="[mix:referenceable,mix:versionable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="4c759c1a-8477-4df5-bf82-441a429de294">
+    <jcr:content
+        cq:lastReplicated="{Date}2020-09-27T21:51:38.583-07:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        cq:name="javier-beez"
+        cq:parentPath="/content/dam/aem-cf-extras/content-fragments/sports/baseball/organizations/major-league-baseball/conferences/national-league/divisions/central/teams/cubs/players/javier-baez"
+        jcr:description=""
+        jcr:lastModified="{Date}2020-03-26T06:51:08.090-07:00"
+        jcr:lastModifiedBy="admin"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="dam:AssetContent"
+        jcr:title="Javier Beez"
+        contentFragment="{Boolean}true"
+        lastFragmentSave="{Date}2020-03-26T06:51:08.090-07:00">
+        <data
+            cq:model="/conf/aem-cf-extras/settings/dam/cfm/models/player"
+            jcr:primaryType="nt:unstructured">
+            <master
+                jcr:mixinTypes="[cq:Taggable]"
+                jcr:primaryType="nt:unstructured"
+                battingArm="Right"
+                battingArm_x0040_LastModified="{Date}2020-03-26T06:51:08.076-07:00"
+                battingAverage="{Double}270.0"
+                battingAverage_x0040_LastModified="{Date}2020-03-26T06:51:08.076-07:00"
+                description_x0040_ContentType="text/html"
+                description_x0040_LastModified="{Date}2020-03-26T06:51:08.074-07:00"
+                displayName="Javier Baez"
+                displayName_x0040_LastModified="{Date}2020-03-26T06:51:08.074-07:00"
+                firstName="Javier"
+                firstName_x0040_LastModified="{Date}2020-03-26T06:51:08.074-07:00"
+                homeRuns="{Long}94"
+                homeRuns_x0040_LastModified="{Date}2020-03-26T06:51:08.077-07:00"
+                id_x0040_LastModified="{Date}2020-03-26T06:48:35.520-07:00"
+                lastName="Baez"
+                lastName_x0040_LastModified="{Date}2020-03-26T06:51:08.075-07:00"
+                positions="[aem-cf-extras:baseball/positions/2nd-base,aem-cf-extras:baseball/positions/shortstop]"
+                positions_x0040_LastModified="{Date}2020-03-26T06:51:08.075-07:00"
+                sponsors="[/content/dam/aem-cf-extras/content-fragments/companies/red-bull/red-bull,/content/dam/aem-cf-extras/content-fragments/companies/under-armour/under-armour]"
+                sponsors_x0040_LastModified="{Date}2020-03-26T06:51:08.077-07:00"
+                sport_x0040_LastModified="{Date}2020-03-26T06:48:35.520-07:00"
+                summary="&lt;p>Ednel Javier Báez (born December 1, 1992), nicknamed &amp;quot;El Mago&amp;quot; (Spanish for &amp;quot;The Magician&amp;quot;), is a Puerto Rican professional baseball shortstop and second baseman for the Chicago Cubs of Major League Baseball (MLB). Born in Puerto Rico, Báez attended high school in Jacksonville, Florida. The Cubs selected Báez with the ninth overall selection of the 2011 MLB draft. He made his MLB debut in 2014.&amp;nbsp;&lt;/p>&#xa;"
+                summary_x0040_ContentType="text/html"
+                summary_x0040_LastModified="{Date}2020-03-26T06:51:08.075-07:00"
+                throwingArm="Right"
+                throwingArm_x0040_LastModified="{Date}2020-03-26T06:51:08.076-07:00"/>
+        </data>
+        <metadata
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

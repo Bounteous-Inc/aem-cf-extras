@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:isCheckedOut="{Boolean}true"
+    jcr:mixinTypes="[mix:referenceable,mix:versionable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="60fb24ad-68c0-4943-ba4e-8a1c60c968d9">
+    <jcr:content
+        cq:lastReplicated="{Date}2020-09-27T21:51:43.057-07:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        cq:name="east"
+        cq:parentPath="/content/dam/aem-cf-extras/content-fragments/sports/baseball/organizations/major-league-baseball/conferences/american-league/divisions/east"
+        jcr:description=""
+        jcr:lastModified="{Date}2020-03-25T19:58:21.318-07:00"
+        jcr:lastModifiedBy="admin"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="dam:AssetContent"
+        jcr:title="East"
+        contentFragment="{Boolean}true"
+        lastFragmentSave="{Date}2020-03-25T19:58:21.318-07:00">
+        <data
+            cq:model="/conf/aem-cf-extras/settings/dam/cfm/models/division"
+            jcr:primaryType="nt:unstructured">
+            <master
+                jcr:mixinTypes="[cq:Taggable]"
+                jcr:primaryType="nt:unstructured"
+                description="&lt;p>The American League East is one of Major League Baseball (MLB)'s six divisions (an East, Central, and West division for each of the two leagues). This division was created before the start of the 1969 season along with the American League West division. Before that time the American League (AL) had existed as a single league of 10 teams.&lt;/p>&#xa;&lt;p>Four of its five teams are located in the Eastern United States, with the other in Central Canada. It is currently the only division to contain a non-American team. At the end of the MLB season, the team with the best record in the division earns one of the American League's five playoff spots. The most recent team to win this division was the New York Yankees in 2019.&amp;nbsp;&lt;br>&#xa;&lt;/p>&#xa;"
+                description_x0040_ContentType="text/html"
+                description_x0040_LastModified="{Date}2020-03-25T19:58:21.297-07:00"
+                displayName="American League East"
+                displayName_x0040_LastModified="{Date}2020-03-25T19:58:21.296-07:00"
+                id_x0040_LastModified="{Date}2020-03-25T19:57:37.637-07:00"
+                team_x0040_LastModified="{Date}2020-03-25T19:57:37.637-07:00"
+                yearFounded="{Long}1969"
+                yearFounded_x0040_LastModified="{Date}2020-03-25T19:58:21.297-07:00"/>
+        </data>
+        <metadata
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

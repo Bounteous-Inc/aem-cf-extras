@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:isCheckedOut="{Boolean}true"
+    jcr:mixinTypes="[mix:referenceable,mix:versionable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="02af1334-deaa-4ae5-80ba-22498f141f6e">
+    <jcr:content
+        cq:lastReplicated="{Date}2020-09-27T21:51:33.038-07:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        cq:name="baseball"
+        cq:parentPath="/content/dam/aem-cf-extras/content-fragments/sports/baseball"
+        jcr:description=""
+        jcr:lastModified="{Date}2020-03-26T04:52:58.347-07:00"
+        jcr:lastModifiedBy="admin"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="dam:AssetContent"
+        jcr:title="Baseball"
+        contentFragment="{Boolean}true"
+        lastFragmentSave="{Date}2020-03-26T04:52:58.347-07:00">
+        <data
+            cq:model="/conf/aem-cf-extras/settings/dam/cfm/models/sport"
+            jcr:primaryType="nt:unstructured">
+            <master
+                jcr:mixinTypes="[cq:Taggable]"
+                jcr:primaryType="nt:unstructured"
+                description="&lt;p>Baseball is a bat-and-ball game played between two opposing teams who take turns batting and fielding. The game proceeds when a player on the fielding team, called the pitcher, throws a ball which a player on the batting team tries to hit with a bat. The objective of the offensive team (batting team) is to hit the ball into the field of play, allowing its players to run the bases, having them advance counter-clockwise around four bases to score what are called &amp;quot;runs&amp;quot;. The objective of the defensive team (fielding team) is to prevent batters from becoming runners, and to prevent runners' advance around the bases.[2] A run is scored when a runner legally advances around the bases in order and touches home plate (the place where the player started as a batter). The team that scores the most runs by the end of the game is the winner.&amp;nbsp;&lt;/p>&#xa;"
+                description_x0040_ContentType="text/html"
+                description_x0040_LastModified="{Date}2020-03-26T04:52:58.328-07:00"
+                displayName="Baseball"
+                displayName_x0040_LastModified="{Date}2020-03-26T04:52:58.327-07:00"
+                equipment="[Baseball,Bat,Glove,Bases]"
+                equipment_x0040_LastModified="{Date}2020-03-26T04:52:58.328-07:00"
+                id_x0040_LastModified="{Date}2020-03-24T23:30:25.030-07:00"
+                state_x0040_LastModified="{Date}2020-03-26T04:52:58.328-07:00"/>
+        </data>
+        <metadata
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

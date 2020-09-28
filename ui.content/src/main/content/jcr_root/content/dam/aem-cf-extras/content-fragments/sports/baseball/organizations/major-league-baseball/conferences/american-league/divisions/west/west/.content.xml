@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:isCheckedOut="{Boolean}true"
+    jcr:mixinTypes="[mix:referenceable,mix:versionable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="b5285ebe-3bae-4ca6-b63d-6273c5adaf28">
+    <jcr:content
+        cq:lastReplicated="{Date}2020-09-27T21:51:47.688-07:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        cq:name="west"
+        cq:parentPath="/content/dam/aem-cf-extras/content-fragments/sports/baseball/organizations/major-league-baseball/conferences/american-league/divisions/west"
+        jcr:description=""
+        jcr:lastModified="{Date}2020-03-25T20:00:27.698-07:00"
+        jcr:lastModifiedBy="admin"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="dam:AssetContent"
+        jcr:title="West"
+        contentFragment="{Boolean}true"
+        lastFragmentSave="{Date}2020-03-25T20:00:27.698-07:00">
+        <data
+            cq:model="/conf/aem-cf-extras/settings/dam/cfm/models/division"
+            jcr:primaryType="nt:unstructured">
+            <master
+                jcr:mixinTypes="[cq:Taggable]"
+                jcr:primaryType="nt:unstructured"
+                description="&lt;p>The American League West is one of three divisions in Major League Baseball's American League. The division has five teams as of the 2013 season, but had four teams from 1994 to 2012, and had as many as seven teams before the 1994 realignment. Although its teams currently only reside along the west coast and in Texas, historically the division has had teams as far east as Chicago. From 1998 (when the NL West expanded to five teams) to 2012, the AL West was the only MLB division with four teams. The current champion of this division is the Houston Astros. In 2013, the Houston Astros went from the National League Central to the AL West.[1] That move gives all six MLB divisions an equal five teams and both leagues an equal 15 teams each.&amp;nbsp;&lt;/p>&#xa;"
+                description_x0040_ContentType="text/html"
+                description_x0040_LastModified="{Date}2020-03-25T20:00:27.681-07:00"
+                displayName="American League West"
+                displayName_x0040_LastModified="{Date}2020-03-25T20:00:27.681-07:00"
+                id_x0040_LastModified="{Date}2020-03-25T19:59:56.102-07:00"
+                team_x0040_LastModified="{Date}2020-03-25T19:59:56.102-07:00"
+                yearFounded="{Long}1969"
+                yearFounded_x0040_LastModified="{Date}2020-03-25T20:00:27.682-07:00"/>
+        </data>
+        <metadata
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

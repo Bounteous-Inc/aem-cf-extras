@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:isCheckedOut="{Boolean}true"
+    jcr:mixinTypes="[mix:referenceable,mix:versionable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="9668e2a3-2794-4e7a-86b6-5fc428f9a919">
+    <jcr:content
+        cq:lastReplicated="{Date}2020-09-27T21:51:45.018-07:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        cq:name="blue-jays"
+        cq:parentPath="/content/dam/aem-cf-extras/content-fragments/sports/baseball/organizations/major-league-baseball/conferences/american-league/divisions/east/teams/blue-jays"
+        jcr:description=""
+        jcr:lastModified="{Date}2020-03-26T02:07:08.961-07:00"
+        jcr:lastModifiedBy="admin"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="dam:AssetContent"
+        jcr:title="Blue Jays"
+        contentFragment="{Boolean}true"
+        lastFragmentSave="{Date}2020-03-26T02:07:08.961-07:00">
+        <data
+            cq:model="/conf/aem-cf-extras/settings/dam/cfm/models/team"
+            jcr:primaryType="nt:unstructured">
+            <master
+                jcr:mixinTypes="[cq:Taggable]"
+                jcr:primaryType="nt:unstructured"
+                city="Toronto"
+                city_x0040_LastModified="{Date}2020-03-26T02:07:08.939-07:00"
+                description="&lt;p>The name &amp;quot;Blue Jays&amp;quot; originates from the bird of the same name, and blue is also the traditional colour of two of Toronto's other professional sports teams: the Maple Leafs (ice hockey) and the Argonauts (Canadian football). In addition, the team was originally owned by the Labatt Brewing Company, makers of the popular beer Labatt's Blue. Colloquially nicknamed the &amp;quot;Jays&amp;quot;, the team's official colours are royal blue, navy blue, red, and powder blue.[1] An expansion franchise, the club was founded in Toronto in 1977. Originally based at Exhibition Stadium, the team began playing its home games at SkyDome upon its opening in 1989. Since 2000, the Blue Jays have been owned by Rogers Communications and in 2004, SkyDome was purchased by that company, which renamed it Rogers Centre. They are the second MLB franchise to be based outside the United States, and currently the only team based outside the U.S. after the first Canadian franchise, the Montreal Expos, became the Washington Nationals in 2005.&amp;nbsp;&lt;/p>&#xa;"
+                description_x0040_ContentType="text/html"
+                description_x0040_LastModified="{Date}2020-03-26T02:07:08.939-07:00"
+                displayName="Blue Jays"
+                displayName_x0040_LastModified="{Date}2020-03-26T02:07:08.938-07:00"
+                id_x0040_LastModified="{Date}2020-03-26T02:06:17.294-07:00"
+                logo="/content/dam/aem-cf-extras/team-logos/Toronto_Blue_Jays.svg"
+                logo_x0040_LastModified="{Date}2020-03-26T02:07:08.940-07:00"
+                players_x0040_LastModified="{Date}2020-03-26T02:06:17.294-07:00"
+                state="[\0]"
+                state_x0040_LastModified="{Date}2020-03-26T02:07:08.939-07:00"/>
+        </data>
+        <metadata
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

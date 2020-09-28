@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:isCheckedOut="{Boolean}true"
+    jcr:mixinTypes="[mix:referenceable,mix:versionable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="366a6fe1-e8f4-4b77-bba2-3f4d0f658a20">
+    <jcr:content
+        cq:lastReplicated="{Date}2020-09-27T21:51:49.256-07:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        cq:name="basketball"
+        cq:parentPath="/content/dam/aem-cf-extras/content-fragments/sports/basketball"
+        jcr:description=""
+        jcr:lastModified="{Date}2020-03-25T11:14:56.051-07:00"
+        jcr:lastModifiedBy="admin"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="dam:AssetContent"
+        jcr:title="Basketball"
+        contentFragment="{Boolean}true"
+        lastFragmentSave="{Date}2020-03-25T11:14:56.051-07:00">
+        <data
+            cq:model="/conf/aem-cf-extras/settings/dam/cfm/models/sport"
+            jcr:primaryType="nt:unstructured">
+            <master
+                jcr:mixinTypes="[cq:Taggable]"
+                jcr:primaryType="nt:unstructured"
+                description="&lt;p>Basketball is a team sport in which two teams, most commonly of five players each, opposing one another on a rectangular court, compete with the primary objective of shooting a basketball (approximately 9.4 inches (24 cm) in diameter) through the defender's hoop (a basket 18 inches (46 cm) in diameter mounted 10 feet (3.048 m) high to a backboard at each end of the court) while preventing the opposing team from shooting through their own hoop. A field goal is worth two points, unless made from behind the three-point line, when it is worth three. After a foul, timed play stops and the player fouled or designated to shoot a technical foul is given one or more one-point free throws. The team with the most points at the end of the game wins, but if regulation play expires with the score tied, an additional period of play (overtime) is mandated.&lt;/p>&#xa;"
+                description_x0040_ContentType="text/html"
+                description_x0040_LastModified="{Date}2020-03-25T11:14:56.033-07:00"
+                displayName="Basketball"
+                displayName_x0040_LastModified="{Date}2020-03-25T11:14:56.033-07:00"
+                equipment="[Basketball,Hoop]"
+                equipment_x0040_LastModified="{Date}2020-03-25T11:14:56.034-07:00"
+                id_x0040_LastModified="{Date}2020-03-25T11:13:14.452-07:00"/>
+        </data>
+        <metadata
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

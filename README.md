@@ -138,4 +138,13 @@ And it would give me back this result.
 A third party querying tool called GraphQL Playground has been embedded in the AEM Touch UI under `Tools -> AEM CF Extras -> GraphQL Playground`.  
 By default, it points to the AEM CF Extras GraphQL endpoint servlet on the same AEM instance.  
 It comes with functioning `SCHEMA` and `DOCS` tabs to the right as well as an autocompletion query editor.  
-*NOTE: Currently you must add `/services/cfx/graphql` to the list of excluded paths in the "Adobe Granite CSRF Filter" config.*
+*NOTE: Currently you must add `/services/cfx/graphql` to the list of excluded paths in the "Adobe Granite CSRF Filter" config.*  
+
+### In The Works ###
+* More custom fields
+* Sling Model Injectors for each custom field type
+* More complex query filter options
+* Variations support
+* Better caching
+* Test coverage
+* Code cleanup and documenting

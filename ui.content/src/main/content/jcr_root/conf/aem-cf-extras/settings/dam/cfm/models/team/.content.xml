@@ -4,11 +4,6 @@
     allowedPaths="[/content/entities(/.*)?]"
     ranking="{Long}100">
     <jcr:content
-        cq:lastModified="{Date}2020-09-21T02:03:45.744-07:00"
-        cq:lastModifiedBy="admin"
-        cq:lastReplicated="{Date}2020-09-27T21:55:21.979-07:00"
-        cq:lastReplicatedBy="admin"
-        cq:lastReplicationAction="Activate"
         cq:scaffolding="/conf/aem-cf-extras/settings/dam/cfm/models/team/jcr:content/model"
         cq:templateType="/libs/settings/dam/cfm/model-types/fragment"
         jcr:primaryType="cq:PageContent"
@@ -25,14 +20,12 @@
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="cq/gui/components/authoring/dialog">
                 <content
-                    jcr:lastModified="{Date}2020-09-21T02:03:45.744-07:00"
-                    jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
                     <items
                         jcr:primaryType="nt:unstructured"
                         maxGeneratedOrder="20">
-                        <_x0031_585115963669
+                        <id
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="aem-cf-extras/cfm/models/datatypeproperties/cfx-id-field"
                             fieldLabel="ID"
@@ -42,7 +35,7 @@
                             renderReadOnly="false"
                             showEmptyInReadOnly="true"
                             valueType="string"/>
-                        <_x0031_585116005976
+                        <displayName
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
                             fieldLabel="Display Name"
@@ -54,7 +47,7 @@
                             required="on"
                             showEmptyInReadOnly="true"
                             valueType="string"/>
-                        <_x0031_585116040575
+                        <description
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="dam/cfm/admin/components/authoring/contenteditor/multieditor"
                             cfm-element="Description"
@@ -65,7 +58,7 @@
                             renderReadOnly="false"
                             showEmptyInReadOnly="true"
                             valueType="string"/>
-                        <_x0031_585116168719
+                        <city
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
                             fieldLabel="City"
@@ -76,7 +69,7 @@
                             renderReadOnly="false"
                             showEmptyInReadOnly="true"
                             valueType="string"/>
-                        <_x0031_585116197244
+                        <state
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="aem-cf-extras/cfm/models/datatypeproperties/cfx-tagfield"
                             fieldLabel="State"
@@ -88,7 +81,7 @@
                             rootPath="/content/cq:tags/aem-cf-extras/states"
                             showEmptyInReadOnly="true"
                             valueType="string"/>
-                        <_x0031_597512156210
+                        <multiTag
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="aem-cf-extras/cfm/models/datatypeproperties/cfx-tagfield"
                             fieldLabel="Multi Tag"
@@ -100,7 +93,7 @@
                             rootPath="/content/cq:tags"
                             showEmptyInReadOnly="true"
                             valueType="string[]"/>
-                        <_x0031_585116246403
+                        <logo
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="aem-cf-extras/cfm/models/datatypeproperties/cfx-image-field"
                             fieldLabel="Logo"
@@ -110,7 +103,7 @@
                             renderReadOnly="false"
                             showEmptyInReadOnly="true"
                             valueType="string"/>
-                        <_x0031_585227165675
+                        <lastWorldSeries
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="aem-cf-extras/cfm/models/datatypeproperties/cfx-datetime"
                             emptyOption="true"
@@ -125,8 +118,8 @@
                             <datasource
                                 jcr:primaryType="nt:unstructured"
                                 variant="default"/>
-                        </_x0031_585227165675>
-                        <_x0031_600332616114
+                        </lastWorldSeries>
+                        <conferenceName
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="aem-cf-extras/cfm/models/datatypeproperties/cfx-parent-field"
                             cfModel="/conf/aem-cf-extras/settings/dam/cfm/models/conference"
@@ -139,7 +132,7 @@
                             renderReadOnly="false"
                             showEmptyInReadOnly="true"
                             valueType="string"/>
-                        <_x0031_600332529883
+                        <divisionName
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="aem-cf-extras/cfm/models/datatypeproperties/cfx-parent-field"
                             cfModel="/conf/aem-cf-extras/settings/dam/cfm/models/division"
@@ -152,7 +145,7 @@
                             renderReadOnly="false"
                             showEmptyInReadOnly="true"
                             valueType="string"/>
-                        <_x0031_585117409536
+                        <players
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="aem-cf-extras/cfm/models/datatypeproperties/cfx-child-field"
                             cfModel="/conf/aem-cf-extras/settings/dam/cfm/models/player"

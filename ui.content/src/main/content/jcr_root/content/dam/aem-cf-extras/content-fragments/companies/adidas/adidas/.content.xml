@@ -5,14 +5,9 @@
     jcr:primaryType="dam:Asset"
     jcr:uuid="9d3c330d-adb3-4b3b-91e7-8e82e9e61f15">
     <jcr:content
-        cq:lastReplicated="{Date}2020-09-27T21:51:51.780-07:00"
-        cq:lastReplicatedBy="admin"
-        cq:lastReplicationAction="Activate"
         cq:name="adidas"
         cq:parentPath="/content/dam/aem-cf-extras/content-fragments/companies/adidas"
         jcr:description=""
-        jcr:lastModified="{Date}2020-03-25T18:40:04.690-07:00"
-        jcr:lastModifiedBy="admin"
         jcr:mixinTypes="[cq:ReplicationStatus]"
         jcr:primaryType="dam:AssetContent"
         jcr:title="Adidas"

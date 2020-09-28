@@ -5,14 +5,9 @@
     jcr:primaryType="dam:Asset"
     jcr:uuid="02af1334-deaa-4ae5-80ba-22498f141f6e">
     <jcr:content
-        cq:lastReplicated="{Date}2020-09-27T21:51:33.038-07:00"
-        cq:lastReplicatedBy="admin"
-        cq:lastReplicationAction="Activate"
         cq:name="baseball"
         cq:parentPath="/content/dam/aem-cf-extras/content-fragments/sports/baseball"
         jcr:description=""
-        jcr:lastModified="{Date}2020-03-26T04:52:58.347-07:00"
-        jcr:lastModifiedBy="admin"
         jcr:mixinTypes="[cq:ReplicationStatus]"
         jcr:primaryType="dam:AssetContent"
         jcr:title="Baseball"

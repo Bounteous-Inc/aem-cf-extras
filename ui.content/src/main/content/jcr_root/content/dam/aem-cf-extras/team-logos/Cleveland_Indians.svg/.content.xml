@@ -4,22 +4,13 @@
     jcr:primaryType="dam:Asset"
     jcr:uuid="37cd67a0-9720-48a6-9011-aba6d750ec1a">
     <jcr:content
-        cq:lastReplicated="{Date}2020-09-27T21:51:59.039-07:00"
-        cq:lastReplicatedBy="admin"
-        cq:lastReplicationAction="Activate"
         dam:assetState="processed"
-        jcr:lastModified="{Date}2020-08-03T09:20:58.215-07:00"
-        jcr:lastModifiedBy="admin"
         jcr:mixinTypes="[cq:ReplicationStatus]"
         jcr:primaryType="dam:AssetContent">
         <metadata
-            dam:extracted="{Date}2020-08-03T09:20:58.101-07:00"
             dam:sha1="f507da5cf2520217de673b4e5e867b8c1463d46e"
             dam:size="{Long}588"
             dc:format="image/svg+xml"
-            dc:modified="{Date}2020-08-03T09:20:57.569-07:00"
-            jcr:lastModified="{Date}2020-08-03T09:20:57.569-07:00"
-            jcr:lastModifiedBy="admin"
             jcr:mixinTypes="[cq:Taggable]"
             jcr:primaryType="nt:unstructured"/>
         <related jcr:primaryType="nt:unstructured"/>

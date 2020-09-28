@@ -5,14 +5,9 @@
     jcr:primaryType="dam:Asset"
     jcr:uuid="e6b39aae-255c-48b5-9510-bc1fa3f471e0">
     <jcr:content
-        cq:lastReplicated="{Date}2020-09-27T21:51:45.018-07:00"
-        cq:lastReplicatedBy="admin"
-        cq:lastReplicationAction="Activate"
         cq:name="central"
         cq:parentPath="/content/dam/aem-cf-extras/content-fragments/sports/baseball/organizations/major-league-baseball/conferences/american-league/divisions/central"
         jcr:description=""
-        jcr:lastModified="{Date}2020-03-25T19:59:33.141-07:00"
-        jcr:lastModifiedBy="admin"
         jcr:mixinTypes="[cq:ReplicationStatus]"
         jcr:primaryType="dam:AssetContent"
         jcr:title="Central"

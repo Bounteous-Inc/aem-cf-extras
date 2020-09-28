@@ -5,14 +5,9 @@
     jcr:primaryType="dam:Asset"
     jcr:uuid="72397fe3-03fd-449e-bb31-1d5f36f0b7e0">
     <jcr:content
-        cq:lastReplicated="{Date}2020-09-27T21:51:46.333-07:00"
-        cq:lastReplicatedBy="admin"
-        cq:lastReplicationAction="Activate"
         cq:name="royals"
         cq:parentPath="/content/dam/aem-cf-extras/content-fragments/sports/baseball/organizations/major-league-baseball/conferences/american-league/divisions/central/teams/royals"
         jcr:description=""
-        jcr:lastModified="{Date}2020-03-26T02:13:13.381-07:00"
-        jcr:lastModifiedBy="admin"
         jcr:mixinTypes="[cq:ReplicationStatus]"
         jcr:primaryType="dam:AssetContent"
         jcr:title="Royals"

@@ -5,14 +5,9 @@
     jcr:primaryType="dam:Asset"
     jcr:uuid="a50a3c81-3601-454b-9e64-859492801eb0">
     <jcr:content
-        cq:lastReplicated="{Date}2020-09-27T21:51:52.955-07:00"
-        cq:lastReplicatedBy="admin"
-        cq:lastReplicationAction="Activate"
         cq:name="red-bull"
         cq:parentPath="/content/dam/aem-cf-extras/content-fragments/companies/red-bull"
         jcr:description=""
-        jcr:lastModified="{Date}2020-03-25T18:43:38.490-07:00"
-        jcr:lastModifiedBy="admin"
         jcr:mixinTypes="[cq:ReplicationStatus]"
         jcr:primaryType="dam:AssetContent"
         jcr:title="Red Bull"

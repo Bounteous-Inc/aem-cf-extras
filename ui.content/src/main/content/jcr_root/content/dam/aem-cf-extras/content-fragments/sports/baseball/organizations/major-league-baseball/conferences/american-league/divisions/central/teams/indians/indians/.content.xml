@@ -5,14 +5,9 @@
     jcr:primaryType="dam:Asset"
     jcr:uuid="4e652611-fd8e-4c41-8921-0878f509d500">
     <jcr:content
-        cq:lastReplicated="{Date}2020-09-27T21:51:46.333-07:00"
-        cq:lastReplicatedBy="admin"
-        cq:lastReplicationAction="Activate"
         cq:name="indians"
         cq:parentPath="/content/dam/aem-cf-extras/content-fragments/sports/baseball/organizations/major-league-baseball/conferences/american-league/divisions/central/teams/indians"
         jcr:description=""
-        jcr:lastModified="{Date}2020-03-26T02:10:27.031-07:00"
-        jcr:lastModifiedBy="admin"
         jcr:mixinTypes="[cq:ReplicationStatus]"
         jcr:primaryType="dam:AssetContent"
         jcr:title="Indians"

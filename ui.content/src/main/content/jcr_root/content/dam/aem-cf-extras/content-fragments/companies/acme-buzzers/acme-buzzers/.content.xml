@@ -5,19 +5,13 @@
     jcr:primaryType="dam:Asset"
     jcr:uuid="7f7b72eb-8bf5-42be-8502-c9ae6c37cf07">
     <jcr:content
-        cq:lastReplicated="{Date}2020-09-27T21:51:52.955-07:00"
-        cq:lastReplicatedBy="admin"
-        cq:lastReplicationAction="Activate"
         cq:name="acme-buzzers"
         cq:parentPath="/content/dam/aem-cf-extras/content-fragments/companies/acme-buzzers"
         jcr:description=""
-        jcr:lastModified="{Date}2020-03-25T18:54:19.957-07:00"
-        jcr:lastModifiedBy="admin"
         jcr:mixinTypes="[cq:ReplicationStatus]"
         jcr:primaryType="dam:AssetContent"
         jcr:title="ACME Buzzers"
-        contentFragment="{Boolean}true"
-        lastFragmentSave="{Date}2020-03-25T18:54:19.957-07:00">
+        contentFragment="{Boolean}true">
         <data
             cq:model="/conf/aem-cf-extras/settings/dam/cfm/models/company"
             jcr:primaryType="nt:unstructured">

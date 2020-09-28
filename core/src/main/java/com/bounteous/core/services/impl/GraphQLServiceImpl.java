@@ -54,6 +54,9 @@ import java.util.function.Function;
 
 import static graphql.ExecutionInput.newExecutionInput;
 
+/**
+ * This is the main service to execute GraphQL queries against the content fragments and models of the current AEM instance.
+ */
 @Component(
         service = {GraphQLService.class, ResourceChangeListener.class},
         property = {
@@ -78,7 +81,7 @@ public class GraphQLServiceImpl implements GraphQLService, ResourceChangeListene
     public static final long DEFAULT_DOCUMENT_CACHE_EXPIRE         = 1440;    // Minutes
     public static final long DEFAULT_GRAPHQL_SCHEMA_CACHE_EXPIRE   = 1440;    // Minutes
     public static final long DEFAULT_QUERY_RESULT_CACHE_MAX_SIZE   = 1_000;
-    public static final long DEFAULT_QUERY_RESULT_CACHE_EXPIRE      = 1440;    // Minutes
+    public static final long DEFAULT_QUERY_RESULT_CACHE_EXPIRE     = 1440;    // Minutes
 
     private static final String GRAPHQL_SCHEMA_KEY = "graphQLSchema";
 
@@ -102,6 +105,10 @@ public class GraphQLServiceImpl implements GraphQLService, ResourceChangeListene
     @Reference
     private ModelFactory modelFactory;
 
+    /**
+     * Initialize the service by defining the caching instances.
+     * @param config The OSGI config object for this service.
+     */
     @Activate
     @Modified
     @SuppressWarnings("unused")
@@ -130,7 +137,7 @@ public class GraphQLServiceImpl implements GraphQLService, ResourceChangeListene
     /**
      * Invalidate the schema and parsed query caches when a Content Fragment Model is added/updated/deleted.
      * Invalidate the query results cache when a content fragment is udpated.
-     * @param list a list of changes
+     * @param list A list of resource change events.
      */
     @Override
     public void onChange(List<ResourceChange> list) {
@@ -152,8 +159,8 @@ public class GraphQLServiceImpl implements GraphQLService, ResourceChangeListene
 
     /**
      * Execute a GraphQL query with a CF service user resource resolver.
-     * @param queryString the query to execute
-     * @return a Map representing the results of the query
+     * @param queryString The query to execute.
+     * @return A Map representing the results of the query.
      */
     @Override
     public Map<String, Object> executeQuery(@NotNull final String queryString) {
@@ -164,9 +171,9 @@ public class GraphQLServiceImpl implements GraphQLService, ResourceChangeListene
 
     /**
      * Execute a GraphQL query with the given resource resolver.
-     * @param queryString the query to execute
-     * @param resolver the resolver to use for the query
-     * @return a Map representing the results of the query
+     * @param queryString The query to execute.
+     * @param resolver The resolver to use for the query.
+     * @return A Map representing the results of the query.
      */
     private Map<String, Object> executeQuery(@NotNull final String queryString, @NotNull final ResourceResolver resolver) {
         GraphQL graphQL = GraphQL.newGraphQL(graphQLSchemaCache.get(GRAPHQL_SCHEMA_KEY))
@@ -184,6 +191,12 @@ public class GraphQLServiceImpl implements GraphQLService, ResourceChangeListene
         return executionResult.toSpecification();
     }
 
+    /**
+     * A convenience method that constructs a GraphQL Query to pull the content fragment at the given path including the list of attributes provided.
+     * @param cfPath The path of the content fragment.
+     * @param attributeList The attributes to return.
+     * @return A map of attributes to values.
+     */
     @Override
     public Map<String, Object> executeQueryForCfPath(@NotNull final String cfPath,
                                                      @NotNull final List<String> attributeList) {
@@ -206,6 +219,12 @@ public class GraphQLServiceImpl implements GraphQLService, ResourceChangeListene
         }
     }
 
+    /**
+     * Execute the give GraphQL Query, returning the results in a JSON string (as apposed to a Map)
+     * If the passed in query string is blank then return the schema.
+     * @param queryString The GraphQL query or blank for a schema.
+     * @return The GraphQL results or a schema in JSON string format.
+     */
     @Override
     public String executeQueryAsJson(@NotNull final String queryString) {
         try (ResourceResolver resolver = getCfManagementResourceResolver()) {
@@ -215,7 +234,6 @@ public class GraphQLServiceImpl implements GraphQLService, ResourceChangeListene
             }
 
             //TODO: Make pretty print configurable
-
             return new GsonBuilder().setPrettyPrinting().serializeNulls().create().toJson(graphQLResultCache.get(queryString));
         } catch (Exception e) {
             LOG.error(Arrays.toString(e.getStackTrace()));
@@ -223,6 +241,11 @@ public class GraphQLServiceImpl implements GraphQLService, ResourceChangeListene
         }
     }
 
+    /**
+     * Get a ContentFragmentInfo object that is not tied to a resource resolver.
+     * @param cfPath The path of the content fragment.
+     * @return A pojo representing a content fragment.
+     */
     @Override
     public GraphQLContentFragment.ContentFragmentInfo getGraphQLContentFragmentInfo(@NotNull final String cfPath) {
         try (ResourceResolver resolver = getCfManagementResourceResolver()) {
@@ -230,6 +253,12 @@ public class GraphQLServiceImpl implements GraphQLService, ResourceChangeListene
         }
     }
 
+    /**
+     * Get a ContentFragmentInfo object that is not tied to a resource resolver.  Use the given resolver to access the repository.
+     * @param cfPath The path of the content fragment.
+     * @param resolver The resolver to use to fetch content.
+     * @return A pojo representing a content fragment.
+     */
     private GraphQLContentFragment.ContentFragmentInfo getGraphQLContentFragmentInfo(@NotNull final String cfPath, ResourceResolver resolver) {
         Resource cfResource = resolver.getResource(cfPath);
         if (cfResource != null) {
@@ -244,7 +273,7 @@ public class GraphQLServiceImpl implements GraphQLService, ResourceChangeListene
 
     /**
      * Wrap call to buildSchema() with a closeable ResourceResolver.
-     * @return the GraphQL Schema
+     * @return The GraphQL schema for this AEM instance.
      */
     private GraphQLSchema buildSchema() {
         try (ResourceResolver resolver = getCfManagementResourceResolver()) {
@@ -252,6 +281,11 @@ public class GraphQLServiceImpl implements GraphQLService, ResourceChangeListene
         }
     }
 
+    /**
+     * Build the GraphQL schema which tells the client what is available for querying.
+     * @param resolver The resolver to use to fetch content.
+     * @return The GraphQL schema for this AEM instance.
+     */
     private GraphQLSchema buildSchema(ResourceResolver resolver) {
         try {
             RuntimeWiring.Builder runtimeWiringBuilder = RuntimeWiring.newRuntimeWiring();
@@ -269,57 +303,81 @@ public class GraphQLServiceImpl implements GraphQLService, ResourceChangeListene
     }
 
     /**
-     * Create the GraphQL root object which is the base of all queries.
-     * @param resolver a live resource resolver to use to fetch resources
-     * @return the root GraphQL object
+     * Create the GraphQL root object which is the base of all queries.  It's children would be the folders under /conf.
+     * @param resolver A live resource resolver to use to fetch resources.
+     * @return The root GraphQL object.
      */
     private GraphQLQueryRoot getGraphQLQueryRoot(@NotNull final ResourceResolver resolver) {
-        Resource confFolderResource = resolver.getResource(CONF_PATH);
-        if (confFolderResource != null) {
-            return ContentFragmentUtils.createModel(modelFactory, confFolderResource, GraphQLQueryRoot.class);
-        }
-        return null;
+        return ContentFragmentUtils.createModel(modelFactory, resolver.getResource(CONF_PATH), GraphQLQueryRoot.class);
     }
 
-    private String buildAttributesFromList(List<String> attributeList) {
+    /**
+     * Convert a list of attributes into a GraphQL query string.
+     * @param attributeList A list of desired attributes to return from the query.  Child attributes should be separated by a period.
+     * @return The query part of a GraphQL query string for the desired attributes.
+     */
+    private static String buildAttributesFromList(List<String> attributeList) {
         Map<String, Object> fields = parseAttributeList(attributeList, new HashMap<>());
         return writeAttributeString(fields);
     }
 
-    private Map<String, Object> parseAttributeList(List<String> attributeList, Map<String, Object> fields) {
+    /**
+     * Parse the linear attributes list so that those using a period to denote a child attribute are moved to a child map.
+     * Leaf scalar attributes will have a null value.
+     * For example passing in this for attributeList
+     *  ['root.foo1', 'root.foo1.bar1', 'root.foo2']
+     *  will return
+     *  [root:[foo1:[bar1:null], foo2:null]]
+     * @param attributeList The list of attributes to query.
+     * @param attributeMap The current map of attributes (used for recursion so initially would be empty map).
+     * @return A map representing the list of passed in attributes.
+     */
+    private static Map<String, Object> parseAttributeList(List<String> attributeList, Map<String, Object> attributeMap) {
         for (String attribute : attributeList) {
-            String[] attributeParts = attribute.split("\\.");
+            final String[] attributeParts = attribute.split("\\.");
             if (attributeParts.length == 1) {
-                fields.put(attributeParts[0], null);
+                attributeMap.put(attributeParts[0], null);
             } else if (attributeParts.length > 1) {
                 StringBuilder referencedAttribute = new StringBuilder();
                 for (int i = 1; i < attributeParts.length; i++) {
                     referencedAttribute.append(i == 1 ? "" : ".").append(attributeParts[i]);
                 }
-                Map<String, Object> map = (Map<String, Object>) fields.get(attributeParts[0]);
-                if (map == null) {
+                Map<String, Object> map;
+                if (attributeMap.get(attributeParts[0]) == null) {
                     map = parseAttributeList(ImmutableList.of(referencedAttribute.toString()), new HashMap<>());
                 } else {
-                    map = parseAttributeList(ImmutableList.of(referencedAttribute.toString()), map);
+                    map = parseAttributeList(
+                        ImmutableList.of(referencedAttribute.toString()),
+                        (Map<String, Object>) attributeMap.get(attributeParts[0]));
                 }
-                fields.put(attributeParts[0], map);
+                attributeMap.put(attributeParts[0], map);
             }
         }
-        return fields;
+        return attributeMap;
     }
 
-    private String writeAttributeString(Map<String, Object> fields) {
+    /**
+     * Convert a map of attributes to a GraphQL query string format.
+     * @param attributeMap The map of attributes.
+     * @return The query part of a GraphQL query string for the desired attributes.
+     */
+    private static String writeAttributeString(Map<String, Object> attributeMap) {
         StringBuilder fieldString = new StringBuilder();
-        for (String key : fields.keySet()) {
-            if (fields.get(key) == null) {
+        for (String key : attributeMap.keySet()) {
+            if (attributeMap.get(key) == null) {
                 fieldString.append(key).append(" ");
             } else {
-                fieldString.append(key).append(" { ").append(writeAttributeString((Map<String, Object>) fields.get(key))).append("} ");
+                fieldString.append(key).append(" { ").append(writeAttributeString((Map<String, Object>) attributeMap.get(key))).append("} ");
             }
         }
         return fieldString.toString();
     }
 
+    /**
+     * Get a resource resolver using a designated system user so that conf folders and Content Fragment Models can be queried
+     * even if they don't have anonymous access.
+     * @return A Service resource resolver.
+     */
     private ResourceResolver getCfManagementResourceResolver() {
         // TODO: Change to a custom user
         try {
@@ -330,6 +388,9 @@ public class GraphQLServiceImpl implements GraphQLService, ResourceChangeListene
         }
     }
 
+    /**
+     * The OSGI Config for this GraphQL Service.
+     */
     @ObjectClassDefinition(name = "GraphQL Service")
     @interface Config {
         @AttributeDefinition(

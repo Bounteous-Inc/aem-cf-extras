@@ -30,7 +30,7 @@ import static org.osgi.framework.Constants.SERVICE_DESCRIPTION;
     property = {
             SERVICE_DESCRIPTION             + "=" + "AEM CFX GraphQL API Servlet",
             SLING_SERVLET_METHODS           + "=" + "[" + METHOD_GET + "," + METHOD_POST + "]",
-            SLING_SERVLET_PATHS             + "=" + "/bin/cfx/graphql"
+            SLING_SERVLET_PATHS             + "=" + "/services/cfx/graphql"
     })
 public class GraphQLServlet extends SlingAllMethodsServlet {
     private static final Logger LOG = LoggerFactory.getLogger(GraphQLServlet.class);

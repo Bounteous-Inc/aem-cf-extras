@@ -428,7 +428,6 @@ public class GraphQLContentFragmentModel extends GraphQLBase implements Fragment
         return cfField.getProducesValue();
     }
 
-    //TODO: cache search results
     public List<GraphQLContentFragment> findContentFragmentsForTemplate(final int offset, final int limit, ModelFactory modelFactory) {
         List<GraphQLContentFragment> contentFragments = new ArrayList<>();
 

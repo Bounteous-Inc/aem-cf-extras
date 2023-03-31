@@ -1,9 +1,9 @@
 # AEM CF Extras
 Extensions to AEM Content Fragments, including GraphQL support and additional model fields.
 
-<span style="color: red;">
+```
 EOL: This project is no longer maintained as much of it has been incorporated into the latest versions of AEM.  There may be some parts of it that remain useful as reference for customizing Content Fragments, however it is not suggested to install the project as is.
-</span>
+```
 
 
 ## Custom Fields
